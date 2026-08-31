@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Generated audio
+*.wav
+*.mp3
+*.webm
+
+# ML models
+*.pt
+*.pth
