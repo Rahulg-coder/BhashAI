@@ -1,0 +1,161 @@
+{
+  "curriculum_version": "NIPUN-BHARAT-FLN-2026.1",
+  "ministry": "Ministry of Education, Government of India / Jharkhand State Education Project Council",
+  "grades": [
+    {
+      "grade": 1,
+      "name": "Class 1 (Grade 1 / Balvatika-3)",
+      "subjects": [
+        {
+          "subject": "Mathematics",
+          "domains": [
+            {
+              "domain": "Numbers and Operations",
+              "competencies": [
+                {
+                  "code": "M1.1",
+                  "competency": "Number Sense up to 10",
+                  "learning_outcomes": [
+                    {
+                      "outcome_id": "FLN-M1-LO1",
+                      "code": "M1.1.1",
+                      "description": "Counts objects up to 10 and associates numerals with quantity",
+                      "hindi_description": "1 से 10 तक वस्तुओं की गिनती करना और संख्या को पहचानना।",
+                      "concept": "Counting 1 to 10",
+                      "lesson_ids": ["LES-M1-01"]
+                    },
+                    {
+                      "outcome_id": "FLN-M1-LO2",
+                      "code": "M1.1.2",
+                      "description": "Compares quantities up to 10 using terms like more, less, equal",
+                      "hindi_description": "10 तक की वस्तुओं की तुलना करना (अधिक, कम, बराबर)।",
+                      "concept": "Comparison of Quantities",
+                      "lesson_ids": ["LES-M1-02"]
+                    }
+                  ]
+                },
+                {
+                  "code": "M1.2",
+                  "competency": "Basic Addition and Subtraction up to 9",
+                  "learning_outcomes": [
+                    {
+                      "outcome_id": "FLN-M1-LO3",
+                      "code": "M1.2.1",
+                      "description": "Performs single-digit addition using concrete objects (sum up to 9)",
+                      "hindi_description": "वस्तुओं की सहायता से 9 तक का साधारण जोड़ करना।",
+                      "concept": "Concrete Addition up to 9",
+                      "lesson_ids": ["LES-M1-03"]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "domain": "Shapes and Spatial Understanding",
+              "competencies": [
+                {
+                  "code": "M1.3",
+                  "competency": "Spatial Vocabulary and Basic 2D Shapes",
+                  "learning_outcomes": [
+                    {
+                      "outcome_id": "FLN-M1-LO4",
+                      "code": "M1.3.1",
+                      "description": "Identifies basic geometric shapes (circle, square, triangle) in immediate environment",
+                      "hindi_description": "आस-पास के वातावरण में मूल आकृतियों (गोल, चौकोर, तिकोना) को पहचानना।",
+                      "concept": "Basic Shapes Identification",
+                      "lesson_ids": ["LES-M1-04"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subject": "Language (Foundational Literacy)",
+          "domains": [
+            {
+              "domain": "Oral Language Development",
+              "competencies": [
+                {
+                  "code": "L1.1",
+                  "competency": "Listening with comprehension and conversational skills",
+                  "learning_outcomes": [
+                    {
+                      "outcome_id": "FLN-L1-LO1",
+                      "code": "L1.1.1",
+                      "description": "Follows 2-3 step classroom instructions given by the teacher",
+                      "hindi_description": "शिक्षक द्वारा दिए गए 2-3 चरणों वाले कक्षा निर्देशों को समझना और पालन करना।",
+                      "concept": "Classroom Directions",
+                      "lesson_ids": ["LES-L1-01"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 2,
+      "name": "Class 2 (Grade 2)",
+      "subjects": [
+        {
+          "subject": "Mathematics",
+          "domains": [
+            {
+              "domain": "Numbers and Operations",
+              "competencies": [
+                {
+                  "code": "M2.1",
+                  "competency": "Number Sense up to 99",
+                  "learning_outcomes": [
+                    {
+                      "outcome_id": "FLN-M2-LO1",
+                      "code": "M2.1.1",
+                      "description": "Reads and writes numbers up to 99 with place value (Tens and Ones)",
+                      "hindi_description": "स्थानीय मान (दहाई और इकाई) के साथ 99 तक की संख्याएँ पढ़ना और लिखना।",
+                      "concept": "Place Value: Tens and Ones",
+                      "lesson_ids": ["LES-M2-01"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "name": "Class 3 (Grade 3)",
+      "subjects": [
+        {
+          "subject": "Mathematics",
+          "domains": [
+            {
+              "domain": "Numbers and Operations",
+              "competencies": [
+                {
+                  "code": "M3.1",
+                  "competency": "Multiplication as Repeated Addition",
+                  "learning_outcomes": [
+                    {
+                      "outcome_id": "FLN-M3-LO1",
+                      "code": "M3.1.1",
+                      "description": "Understands multiplication as repeated addition of equal groups",
+                      "hindi_description": "बराबर समूहों के बार-बार जोड़ के रूप में गुणा की अवधारणा को समझना।",
+                      "concept": "Concept of Multiplication",
+                      "lesson_ids": ["LES-M3-01"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

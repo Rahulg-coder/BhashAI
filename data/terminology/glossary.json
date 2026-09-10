@@ -1,0 +1,1470 @@
+{
+  "version": "1.0.0",
+  "languages": [
+    "santhali",
+    "mundari",
+    "ho"
+  ],
+  "terms": [
+    {
+      "hindi_term": "नमस्ते",
+      "domain": "greeting",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱡᱚᱦᱟᱨ",
+        "phonetic": "johar",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱡᱚᱦᱟᱨ",
+        "phonetic": "johar",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱡᱚᱦᱟᱨ",
+        "phonetic": "johar",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "बच्चों",
+      "domain": "classroom",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ",
+        "phonetic": "gidra ko",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱦᱚᱱ ᱠᱚ",
+        "phonetic": "hon ko",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱦᱚᱱ ᱠᱚ",
+        "phonetic": "hon ko",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "बच्चे",
+      "domain": "classroom",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ",
+        "phonetic": "gidra ko",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱦᱚᱱ ᱠᱚ",
+        "phonetic": "hon ko",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱦᱚᱱ ᱠᱚ",
+        "phonetic": "hon ko",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "आज",
+      "domain": "general",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱮᱦᱮᱧ",
+        "phonetic": "teheñ",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱛᱤᱥᱤᱝ",
+        "phonetic": "tising",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱛᱤᱥᱤᱝ",
+        "phonetic": "tising",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "हम",
+      "domain": "pronoun",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱵᱚ",
+        "phonetic": "abo",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱞᱮ",
+        "phonetic": "ale",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱞᱮ",
+        "phonetic": "ale",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "आप",
+      "domain": "pronoun",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱯᱮ",
+        "phonetic": "ape",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱯᱮ",
+        "phonetic": "ape",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱯᱮ",
+        "phonetic": "ape",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "तुम",
+      "domain": "pronoun",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱢ",
+        "phonetic": "am",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱢ",
+        "phonetic": "am",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱢ",
+        "phonetic": "am",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "मैं",
+      "domain": "pronoun",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱤᱧ",
+        "phonetic": "iñ",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱭᱤᱧ",
+        "phonetic": "ayiñ",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱭᱤᱧ",
+        "phonetic": "ayiñ",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "गिनती",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱞᱮᱠᱷᱟ",
+        "phonetic": "lekha",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱞᱮᱠᱷᱟ",
+        "phonetic": "leka",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱞᱮᱠᱟ",
+        "phonetic": "leka",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "सीखेंगे",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱪᱮᱫ-ᱟ",
+        "phonetic": "ched-a",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱤᱛᱩ-ᱟ",
+        "phonetic": "itu-a",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱤᱛᱩ-ᱟ",
+        "phonetic": "itu-a",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "सीखो",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱪᱮᱫ ᱯᱮ",
+        "phonetic": "ched pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱤᱛᱩ ᱯᱮ",
+        "phonetic": "itu pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱤᱛᱩ ᱯᱮ",
+        "phonetic": "itu pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पढ़ेंगे",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱯᱟᱲᱦᱟᱣ-ᱟ",
+        "phonetic": "parhaw-a",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱯᱟᱲᱦᱟᱣ-ᱟ",
+        "phonetic": "parhaw-a",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱯᱟᱲᱦᱟᱣ-ᱟ",
+        "phonetic": "parhaw-a",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पढ़ो",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱯᱟᱲᱦᱟᱣ ᱯᱮ",
+        "phonetic": "parhaw pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱯᱟᱲᱦᱟᱣ ᱯᱮ",
+        "phonetic": "parhaw pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱯᱟᱲᱦᱟᱣ ᱯᱮ",
+        "phonetic": "parhaw pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "लिखेंगे",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱚᱞ-ᱟ",
+        "phonetic": "ol-a",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱚᱞ-ᱟ",
+        "phonetic": "ol-a",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱚᱞ-ᱟ",
+        "phonetic": "ol-a",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "लिखो",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱚᱞ ᱯᱮ",
+        "phonetic": "ol pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱚᱞ ᱯᱮ",
+        "phonetic": "ol pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱚᱞ ᱯᱮ",
+        "phonetic": "ol pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "लिखिए",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱚᱞ ᱯᱮ",
+        "phonetic": "ol pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱚᱞ ᱯᱮ",
+        "phonetic": "ol pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱚᱞ ᱯᱮ",
+        "phonetic": "ol pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "खोलिए",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "खोलें",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "खोलो",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱡᱷᱤᱡ ᱯᱮ",
+        "phonetic": "jhij pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "देखो",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱧᱮᱞ ᱯᱮ",
+        "phonetic": "ñel pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱧᱮᱞ ᱯᱮ",
+        "phonetic": "ñel pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱧᱮᱞ ᱯᱮ",
+        "phonetic": "ñel pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "देखिए",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱧᱮᱞ ᱯᱮ",
+        "phonetic": "ñel pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱧᱮᱞ ᱯᱮ",
+        "phonetic": "ñel pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱧᱮᱞ ᱯᱮ",
+        "phonetic": "ñel pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "सुनो",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱸᱡᱚᱢ ᱯᱮ",
+        "phonetic": "añjom pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱸᱡᱚᱢ ᱯᱮ",
+        "phonetic": "añjom pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱸᱡᱚᱢ ᱯᱮ",
+        "phonetic": "añjom pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "सुनिए",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱸᱡᱚᱢ ᱯᱮ",
+        "phonetic": "añjom pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱸᱡᱚᱢ ᱯᱮ",
+        "phonetic": "añjom pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱸᱡᱚᱢ ᱯᱮ",
+        "phonetic": "añjom pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "खड़े हो जाओ",
+      "domain": "instruction",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱤᱸᱜᱩᱱ ᱯᱮ",
+        "phonetic": "tingun pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱛᱤᱸᱜᱩᱱ ᱯᱮ",
+        "phonetic": "tingun pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱛᱤᱸᱜᱩᱱ ᱯᱮ",
+        "phonetic": "tingun pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "खड़े हो जाइए",
+      "domain": "instruction",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱤᱸᱜᱩᱱ ᱯᱮ",
+        "phonetic": "tingun pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱛᱤᱸᱜᱩᱱ ᱯᱮ",
+        "phonetic": "tingun pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱛᱤᱸᱜᱩᱱ ᱯᱮ",
+        "phonetic": "tingun pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "बैठ जाओ",
+      "domain": "instruction",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱫᱩᱲᱩᱵ ᱯᱮ",
+        "phonetic": "durub pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱫᱩᱵ ᱯᱮ",
+        "phonetic": "dub pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱫᱩᱵ ᱯᱮ",
+        "phonetic": "dub pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "बैठिए",
+      "domain": "instruction",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱫᱩᱲᱩᱵ ᱯᱮ",
+        "phonetic": "durub pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱫᱩᱵ ᱯᱮ",
+        "phonetic": "dub pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱫᱩᱵ ᱯᱮ",
+        "phonetic": "dub pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "यहाँ",
+      "domain": "location",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱱᱚᱸᱰᱮ",
+        "phonetic": "nonde",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱱᱮᱸᱫᱟ",
+        "phonetic": "nenda",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱱᱮᱸᱫᱟ",
+        "phonetic": "nenda",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "वहाँ",
+      "domain": "location",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱦᱟᱸᱰᱮ",
+        "phonetic": "hande",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱦᱮᱸᱫᱟ",
+        "phonetic": "henda",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱦᱮᱸᱫᱟ",
+        "phonetic": "henda",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "आओ",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱦᱤᱡᱩᱜ ᱯᱮ",
+        "phonetic": "hijug pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱦᱤᱡᱩᱜ ᱯᱮ",
+        "phonetic": "hijug pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱦᱤᱡᱩᱜ ᱯᱮ",
+        "phonetic": "hijug pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "आइए",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱦᱤᱡᱩᱜ ᱯᱮ",
+        "phonetic": "hijug pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱦᱤᱡᱩᱜ ᱯᱮ",
+        "phonetic": "hijug pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱦᱤᱡᱩᱜ ᱯᱮ",
+        "phonetic": "hijug pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "जाओ",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱪᱟᱞᱟᱜ ᱯᱮ",
+        "phonetic": "chalag pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱥᱮᱱᱚᱜ ᱯᱮ",
+        "phonetic": "senog pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱥᱮᱱᱚᱜ ᱯᱮ",
+        "phonetic": "senog pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "बताओ",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱞᱟᱹᱭ ᱯᱮ",
+        "phonetic": "lay pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱠᱟᱡᱤ ᱯᱮ",
+        "phonetic": "kaji pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱠᱟᱡᱤ ᱯᱮ",
+        "phonetic": "kaji pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "बताइए",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱞᱟᱹᱭ ᱯᱮ",
+        "phonetic": "lay pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱠᱟᱡᱤ ᱯᱮ",
+        "phonetic": "kaji pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱠᱟᱡᱤ ᱯᱮ",
+        "phonetic": "kaji pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "दिखाइए",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱩᱫᱩᱜ ᱯᱮ",
+        "phonetic": "udug pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱩᱫᱩᱜ ᱯᱮ",
+        "phonetic": "udug pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱩᱫᱩᱜ ᱯᱮ",
+        "phonetic": "udug pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "दिखाओ",
+      "domain": "verb",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱩᱫᱩᱜ ᱯᱮ",
+        "phonetic": "udug pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱩᱫᱩᱜ ᱯᱮ",
+        "phonetic": "udug pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱩᱫᱩᱜ ᱯᱮ",
+        "phonetic": "udug pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "क्या",
+      "domain": "question",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱪᱮᱫ",
+        "phonetic": "ched",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱪᱤᱱᱟᱹ",
+        "phonetic": "china",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱪᱤᱱᱟᱹ",
+        "phonetic": "china",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "कैसे",
+      "domain": "question",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱪᱮᱫ ᱞᱮᱠᱟ",
+        "phonetic": "ched leka",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱪᱤᱞᱠᱟ",
+        "phonetic": "chilka",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱪᱤᱞᱠᱟ",
+        "phonetic": "chilka",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "कहाँ",
+      "domain": "question",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱚᱠᱟᱨᱮ",
+        "phonetic": "okare",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱚᱠᱚᱨᱮ",
+        "phonetic": "okore",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱚᱠᱚᱨᱮ",
+        "phonetic": "okore",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "कितना",
+      "domain": "question",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱤᱱᱟᱹᱜ",
+        "phonetic": "tinag",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱪᱤᱢᱤᱱ",
+        "phonetic": "chimin",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱪᱤᱢᱤᱱ",
+        "phonetic": "chimin",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "कितने",
+      "domain": "question",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱤᱱᱟᱹᱜ",
+        "phonetic": "tinag",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱪᱤᱢᱤᱱ",
+        "phonetic": "chimin",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱪᱤᱢᱤᱱ",
+        "phonetic": "chimin",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "कितनी",
+      "domain": "question",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱤᱱᱟᱹᱜ",
+        "phonetic": "tinag",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱪᱤᱢᱤᱱ",
+        "phonetic": "chimin",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱪᱤᱢᱤᱱ",
+        "phonetic": "chimin",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "हाँ",
+      "domain": "response",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱦᱮᱸ",
+        "phonetic": "hẽ",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱦᱮᱸ",
+        "phonetic": "hẽ",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱦᱮᱸ",
+        "phonetic": "hẽ",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "नहीं",
+      "domain": "response",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱵᱟᱝ",
+        "phonetic": "bang",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱠᱟ",
+        "phonetic": "ka",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱠᱟ",
+        "phonetic": "ka",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "अच्छा",
+      "domain": "general",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱵᱮᱥ",
+        "phonetic": "bes",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱵᱮᱥ",
+        "phonetic": "bes",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱵᱮᱥ",
+        "phonetic": "bes",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "बहुत अच्छा",
+      "domain": "general",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱹᱰᱤ ᱱᱟᱯᱟᱭ",
+        "phonetic": "adi napay",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱹᱰᱤ ᱵᱮᱥ",
+        "phonetic": "adi bes",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱹᱰᱤ ᱵᱮᱥ",
+        "phonetic": "adi bes",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "शाबाश",
+      "domain": "encouragement",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱹᱰᱤ ᱵᱮᱥ",
+        "phonetic": "adi bes",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱹᱰᱤ ᱵᱮᱥ",
+        "phonetic": "adi bes",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱹᱰᱤ ᱵᱮᱥ",
+        "phonetic": "adi bes",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "किताब",
+      "domain": "classroom",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱯᱩᱛᱷᱤ",
+        "phonetic": "puthi",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱯᱩᱛᱷᱤ",
+        "phonetic": "puthi",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱯᱩᱛᱷᱤ",
+        "phonetic": "puthi",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पेंसिल",
+      "domain": "classroom",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱯᱮᱱᱥᱤᱞ",
+        "phonetic": "pencil",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱯᱮᱱᱥᱤᱞ",
+        "phonetic": "pencil",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱯᱮᱱᱥᱤᱞ",
+        "phonetic": "pencil",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पत्ता",
+      "domain": "nature",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱥᱟᱠᱟᱢ",
+        "phonetic": "sakam",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱥᱟᱠᱟᱢ",
+        "phonetic": "sakam",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱥᱟᱠᱟᱢ",
+        "phonetic": "sakam",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पत्ते",
+      "domain": "nature",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱥᱟᱠᱟᱢ ᱠᱚ",
+        "phonetic": "sakam ko",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱥᱟᱠᱟᱢ ᱠᱚ",
+        "phonetic": "sakam ko",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱥᱟᱠᱟᱢ ᱠᱚ",
+        "phonetic": "sakam ko",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "कंकड़",
+      "domain": "nature",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱫᱷᱤᱨᱤ",
+        "phonetic": "dhiri",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱫᱷᱤᱨᱤ",
+        "phonetic": "dhiri",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱫᱷᱤᱨᱤ",
+        "phonetic": "dhiri",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पत्थर",
+      "domain": "nature",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱫᱷᱤᱨᱤ",
+        "phonetic": "dhiri",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱫᱷᱤᱨᱤ",
+        "phonetic": "dhiri",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱫᱷᱤᱨᱤ",
+        "phonetic": "dhiri",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पानी",
+      "domain": "general",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱫᱟᱜ",
+        "phonetic": "dag",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱫᱟᱜ",
+        "phonetic": "dag",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱫᱟᱜ",
+        "phonetic": "dag",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पेड़",
+      "domain": "nature",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱫᱟᱨᱮ",
+        "phonetic": "dare",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱫᱟᱨᱩ",
+        "phonetic": "daru",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱫᱟᱨᱩ",
+        "phonetic": "daru",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "एक",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱢᱤᱫ",
+        "phonetic": "mid",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱢᱤᱭᱟᱫ",
+        "phonetic": "miyad",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱢᱤ",
+        "phonetic": "mi",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "दो",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱵᱟᱨ",
+        "phonetic": "bar",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱵᱟᱨᱤᱭᱟ",
+        "phonetic": "bariya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱵᱟᱨ",
+        "phonetic": "bar",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "तीन",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱯᱮ",
+        "phonetic": "pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱯᱤᱭᱟ",
+        "phonetic": "apiya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱯᱮ",
+        "phonetic": "ape",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "चार",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱯᱩᱱ",
+        "phonetic": "pun",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱩᱯᱩᱱᱤᱭᱟ",
+        "phonetic": "upuniya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱩᱯᱩᱱ",
+        "phonetic": "upun",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "पाँच",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱢᱚᱬᱮ",
+        "phonetic": "mone",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱢᱚᱬᱮᱭᱟ",
+        "phonetic": "moneya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱢᱚᱭᱟ",
+        "phonetic": "moya",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "छह",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱩᱨᱩᱭ",
+        "phonetic": "turuy",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱛᱩᱨᱩᱭᱟ",
+        "phonetic": "turuya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱛᱩᱨᱩᱭ",
+        "phonetic": "turuy",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "सात",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱮᱭᱟᱭ",
+        "phonetic": "eyay",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱮᱭᱟᱭᱟ",
+        "phonetic": "eyaya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱮᱭᱟᱭ",
+        "phonetic": "eyay",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "आठ",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱤᱨᱟᱹᱞ",
+        "phonetic": "iral",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱤᱨᱟᱹᱞᱤᱭᱟ",
+        "phonetic": "iraliya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱤᱨᱤᱞ",
+        "phonetic": "iril",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "नौ",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱟᱨᱮ",
+        "phonetic": "are",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱟᱨᱮᱭᱟ",
+        "phonetic": "areya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱟᱨᱮ",
+        "phonetic": "are",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "दस",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱜᱮᱞ",
+        "phonetic": "gel",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱜᱮᱞᱮᱭᱟ",
+        "phonetic": "geleya",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱜᱮᱞ",
+        "phonetic": "gel",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "जोड़",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱡᱚᱲ",
+        "phonetic": "jod",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱡᱚᱲ",
+        "phonetic": "jod",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱢᱮᱥᱟ",
+        "phonetic": "mesa",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "जोड़िए",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱢᱮᱥᱟᱭ ᱯᱮ",
+        "phonetic": "mesay pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱡᱚᱲ ᱯᱮ",
+        "phonetic": "jod pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱢᱮᱥᱟ ᱯᱮ",
+        "phonetic": "mesa pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "घटाव",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱜᱷᱟᱴᱟᱣ",
+        "phonetic": "ghataw",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱜᱷᱟᱴᱟᱣ",
+        "phonetic": "ghataw",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱚᱪᱚᱜ",
+        "phonetic": "ochog",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "घटाइए",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱚᱪᱚᱜ ᱯᱮ",
+        "phonetic": "ochog pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱜᱷᱟᱴᱟᱣ ᱯᱮ",
+        "phonetic": "ghataw pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱚᱪᱚᱜ ᱯᱮ",
+        "phonetic": "ochog pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "गिनिए",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱞᱮᱠᱷᱟᱭ ᱯᱮ",
+        "phonetic": "lekhay pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱞᱮᱠᱟ ᱯᱮ",
+        "phonetic": "leka pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱞᱮᱠᱟ ᱯᱮ",
+        "phonetic": "leka pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "गिनो",
+      "domain": "mathematics",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱞᱮᱠᱷᱟᱭ ᱯᱮ",
+        "phonetic": "lekhay pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱞᱮᱠᱟ ᱯᱮ",
+        "phonetic": "leka pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱞᱮᱠᱟ ᱯᱮ",
+        "phonetic": "leka pe",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "ताली",
+      "domain": "action",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱷᱟᱭᱚ",
+        "phonetic": "thayo",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱛᱷᱟᱭᱚ",
+        "phonetic": "thayo",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱛᱷᱟᱭᱚ",
+        "phonetic": "thayo",
+        "approved": true
+      }
+    },
+    {
+      "hindi_term": "ताली बजाइए",
+      "domain": "action",
+      "grade": 1,
+      "santhali": {
+        "ol_chiki": "ᱛᱷᱟᱭᱚ ᱯᱮ",
+        "phonetic": "thayo pe",
+        "approved": true
+      },
+      "mundari": {
+        "text": "ᱛᱷᱟᱭᱚ ᱯᱮ",
+        "phonetic": "thayo pe",
+        "approved": true
+      },
+      "ho": {
+        "text": "ᱛᱷᱟᱭᱚ ᱯᱮ",
+        "phonetic": "thayo pe",
+        "approved": true
+      }
+    }
+  ]
+}

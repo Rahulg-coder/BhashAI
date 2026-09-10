@@ -1,0 +1,167 @@
+{
+  "lessons": [
+    {
+      "lesson_id": "LES-M1-01",
+      "fln_outcome_id": "FLN-M1-LO1",
+      "grade": 1,
+      "subject": "Mathematics",
+      "domain": "Numbers and Operations",
+      "title_hindi": "1 से 10 तक गिनती सीखना",
+      "title_santhali": "᱑ ᱠᱷᱚᱱ ᱑᱐ ᱦᱟᱹᱵᱤᱡ ᱞᱮᱠᱷᱟ ᱪᱮᱫ",
+      "concept": "Counting objects 1 to 10",
+      "intro": {
+        "hindi": "नमस्ते बच्चों! आज हम कक्षा में सुंदर पत्तों और कंकड़ों से 1 से 10 तक गिनती सीखेंगे।",
+        "santhali_olck": "ᱡᱚᱦᱟᱨ ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ! ᱛᱮᱦᱮᱧ ᱫᱚ ᱟᱵᱚ ᱠᱞᱟᱥ ᱨᱮ ᱥᱟᱠᱟᱢ ᱟᱨ ᱫᱷᱤᱨᱤ ᱛᱮ ᱑ ᱠᱷᱚᱱ ᱑᱐ ᱦᱟᱹᱵᱤᱡ ᱞᱮᱠᱷᱟ ᱵᱚ ᱪᱮᱫ-ᱟ᱾",
+        "santhali_phonetic": "Johar gidra ko! Teheñ do abo class re sakam ar dhiri te 1 khon 10 habij lekha bo ched-a."
+      },
+      "teacher_explanation": [
+        {
+          "step": 1,
+          "hindi": "यह एक पत्ता है। इसे हम 'एक' कहते हैं।",
+          "santhali_olck": "ᱱᱚᱣᱟ ᱫᱚ ᱢᱤᱫᱴᱟᱝ ᱥᱟᱠᱟᱢ ᱠᱟᱱᱟ᱾ ᱱᱚᱣᱟ ᱫᱚ ᱟᱵᱚ 'ᱢᱤᱫ' ᱵᱚ ᱢᱮᱛᱟᱜ-ᱟ᱾",
+          "santhali_phonetic": "Nowa do midtang sakam kana. Nowa do abo 'mid' bo metag-a."
+        },
+        {
+          "step": 2,
+          "hindi": "अब मैंने एक और पत्ता रखा। अब ये दो पत्ते हो गए।",
+          "santhali_olck": "ᱱᱤᱛᱚᱜ ᱤᱧ ᱟᱨ ᱢᱤᱫᱴᱟᱝ ᱥᱟᱠᱟᱢ ᱤᱧ ᱫᱚᱦᱚ ᱠᱮᱫ-ᱟ᱾ ᱱᱤᱛᱚᱜ ᱫᱚ ᱵᱟᱨᱭᱟ ᱥᱟᱠᱟᱢ ᱦᱩᱭᱮᱱᱟ᱾",
+          "santhali_phonetic": "Nitog iñ ar midtang sakam iñ doho ked-a. Nitog do barya sakam huyena."
+        },
+        {
+          "step": 3,
+          "hindi": "तीन पत्ते, चार पत्ते, और ये पाँच पत्ते। मेरे साथ गिनिए: एक, दो, तीन, चार, पाँच!",
+          "santhali_olck": "ᱯᱮᱭᱟ ᱥᱟᱠᱟᱢ, ᱯᱩᱱᱭᱟᱹ ᱥᱟᱠᱟᱢ, ᱟᱨ ᱱᱚᱣᱟ ᱫᱚ ᱢᱚᱬᱮᱭᱟ ᱥᱟᱠᱟᱢ᱾ ᱤᱧ ᱥᱟᱶᱛᱮ ᱞᱮᱠᱷᱟᱭ ᱯᱮ: ᱢᱤᱫ, ᱵᱟᱨ, ᱯᱮ, ᱯᱩᱱ, ᱢᱚᱬᱮ!",
+          "santhali_phonetic": "Peya sakam, punya sakam, ar nowa do moneya sakam. Iñ sawte lekhay pe: mid, bar, pe, pun, mone!"
+        }
+      ],
+      "activity": {
+        "title_hindi": "कंकड़ गिनो गतिविधि",
+        "title_santhali": "ᱫᱷᱤᱨᱤ ᱞᱮᱠᱷᱟ ᱠᱟᱹᱢᱤᱦᱚᱨᱟ",
+        "instructions_hindi": "सभी बच्चे अपने-अपने सामने पाँच कंकड़ रखें और एक-एक करके जोर से गिनें।",
+        "instructions_santhali_olck": "ᱡᱚᱛᱚ ᱜᱤᱫᱽᱨᱟᱹ ᱟᱯᱱᱟᱨ ᱥᱟᱢᱟᱝ ᱨᱮ ᱢᱚᱬᱮᱭᱟ ᱫᱷᱤᱨᱤ ᱫᱚᱦᱚᱭ ᱯᱮ ᱟᱨ ᱢᱤᱫ-ᱢᱤᱫ ᱛᱮ ᱟᱲᱟᱝ ᱠᱟᱛᱮ ᱞᱮᱠᱷᱟᱭ ᱯᱮ᱾",
+        "instructions_santhali_phonetic": "Joto gidra apnar samang re moneya dhiri dohoy pe ar mid-mid te arang kate lekhay pe."
+      },
+      "student_practice": {
+        "hindi": "अपने हाथ की उँगलियाँ खोलिए और 1 से 5 तक गिनिए।",
+        "santhali_olck": "ᱟᱯᱱᱟᱨ ᱛᱤ ᱨᱮᱱᱟᱜ ᱠᱟᱹᱴᱩᱵ ᱯᱷᱟᱸᱠ ᱯᱮ ᱟᱨ ᱑ ᱠᱷᱚᱱ ᱕ ᱦᱟᱹᱵᱤᱡ ᱞᱮᱠᱷᱟᱭ ᱯᱮ᱾",
+        "santhali_phonetic": "Apnar ti renag katub phank pe ar 1 khon 5 habij lekhay pe."
+      },
+      "assessment": [
+        {
+          "question_num": 1,
+          "hindi": "इस चित्र में कितनी चिड़ियाँ हैं?",
+          "santhali_olck": "ᱱᱚᱣᱟ ᱪᱤᱛᱟᱹᱨ ᱨᱮ ᱛᱤᱱᱟᱹᱜ ᱪᱮᱬᱮ ᱢᱮᱱᱟᱜ ᱠᱚᱣᱟ?",
+          "santhali_phonetic": "Nowa chitar re tinag chene menag kowa?",
+          "answer": "3"
+        },
+        {
+          "question_num": 2,
+          "hindi": "पाँच कंकड़ उठाकर दिखाइए।",
+          "santhali_olck": "ᱢᱚᱬᱮᱭᱟ ᱫᱷᱤᱨᱤ ᱨᱟᱠᱟᱵ ᱠᱟᱛᱮ ᱩᱫᱩᱜ ᱯᱮ᱾",
+          "santhali_phonetic": "Moneya dhiri rakab kate udug pe.",
+          "answer": "5 objects"
+        }
+      ]
+    },
+    {
+      "lesson_id": "LES-M1-03",
+      "fln_outcome_id": "FLN-M1-LO3",
+      "grade": 1,
+      "subject": "Mathematics",
+      "domain": "Numbers and Operations",
+      "title_hindi": "वस्तुओं के साथ साधारण जोड़",
+      "title_santhali": "ᱡᱤᱱᱤᱥ ᱠᱚ ᱛᱮ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱡᱚᱲ",
+      "concept": "Addition up to 9 with objects",
+      "intro": {
+        "hindi": "बच्चों, जब हम दो चीजों को मिलाते हैं, तो उसे जोड़ना कहते हैं।",
+        "santhali_olck": "ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ, ᱡᱚᱠᱷᱚᱱ ᱟᱵᱚ ᱵᱟᱨᱭᱟ ᱡᱤᱱᱤᱥ ᱵᱚ ᱢᱮᱥᱟᱭᱟ, ᱩᱱ ᱡᱚᱦᱚᱜ ᱫᱚ ᱡᱚᱲ ᱵᱚ ᱢᱮᱛᱟᱜ-ᱟ᱾",
+        "santhali_phonetic": "Gidra ko, jokhon abo barya jinis bo mesaya, un johog do jod bo metag-a."
+      },
+      "teacher_explanation": [
+        {
+          "step": 1,
+          "hindi": "मेरे बाएँ हाथ में 2 कंकड़ हैं, और दाएँ हाथ में 1 कंकड़ है।",
+          "santhali_olck": "ᱤᱧᱟᱜ ᱞᱮᱸᱜᱟ ᱛᱤ ᱨᱮ ᱒ ᱭᱟ ᱫᱷᱤᱨᱤ ᱢᱮᱱᱟᱜ-ᱟ, ᱟᱨ ᱡᱚᱡᱚᱢ ᱛᱤ ᱨᱮ ᱑ ᱴᱟᱝ ᱫᱷᱤᱨᱤ ᱢᱮᱱᱟᱜ-ᱟ᱾",
+          "santhali_phonetic": "Iñag lenga ti re 2 ya dhiri menag-a, ar jojom ti re 1 tang dhiri menag-a."
+        },
+        {
+          "step": 2,
+          "hindi": "जब दोनों को एक साथ मिला दिया, तो कुल कितने कंकड़ हुए? एक, दो, तीन!",
+          "santhali_olck": "ᱡᱚᱠᱷᱚᱱ ᱵᱟᱱᱟᱨ ᱢᱤᱫ ᱥᱟᱶᱛᱮ ᱵᱚ ᱢᱮᱥᱟ ᱠᱮᱫ-ᱟ, ᱩᱱ ᱡᱚᱦᱚᱜ ᱡᱚᱛᱚ ᱛᱮ ᱛᱤᱱᱟᱹᱜ ᱫᱷᱤᱨᱤ ᱦᱩᱭᱮᱱᱟ? ᱢᱤᱫ, ᱵᱟᱨ, ᱯᱮ!",
+          "santhali_phonetic": "Jokhon banar mid sawte bo mesa ked-a, un johog joto te tinag dhiri huyena? Mid, bar, pe!"
+        }
+      ],
+      "activity": {
+        "title_hindi": "दोस्त के साथ जोड़ गतिविधि",
+        "title_santhali": "ᱜᱟᱛᱮ ᱥᱟᱶᱛᱮ ᱡᱚᱲ ᱠᱟᱹᱢᱤᱦᱚᱨᱟ",
+        "instructions_hindi": "आप 2 पेंसिल लीजिए, आपका साथी 2 पेंसिल देगा। दोनों मिलाकर गिनिए।",
+        "instructions_santhali_olck": "ᱟᱢ ᱒ ᱭᱟ ᱯᱮᱱᱥᱤᱞ ᱤᱫᱤ ᱢᱮ, ᱟᱢ ᱨᱮᱱ ᱜᱟᱛᱮ ᱒ ᱭᱟ ᱯᱮᱱᱥᱤᱞ ᱮ ᱮᱢᱟᱢᱟ᱾ ᱵᱟᱱᱟᱨ ᱢᱮᱥᱟ ᱠᱟᱛᱮ ᱞᱮᱠᱷᱟᱭ ᱯᱮ᱾",
+        "instructions_santhali_phonetic": "Am 2 ya pencil idi me, am ren gate 2 ya pencil e emama. Banar mesa kate lekhay pe."
+      },
+      "student_practice": {
+        "hindi": "3 में 2 जोड़ने पर कितना बनता है? कंकड़ से गिनकर बताइए।",
+        "santhali_olck": "᱓ ᱨᱮ ᱒ ᱢᱮᱥᱟ ᱞᱮᱠᱷᱟᱱ ᱛᱤᱱᱟᱹᱜ ᱦᱩᱭᱩᱜ-ᱟ? ᱫᱷᱤᱨᱤ ᱛᱮ ᱞᱮᱠᱷᱟ ᱠᱟᱛᱮ ᱞᱟᱹᱭ ᱯᱮ᱾",
+        "santhali_phonetic": "3 re 2 mesa lekhan tinag huyug-a? Dhiri te lekha kate lay pe."
+      },
+      "assessment": [
+        {
+          "question_num": 1,
+          "hindi": "2 + 1 कितना होता है?",
+          "santhali_olck": "᱒ + ᱑ ᱛᱤᱱᱟᱹᱜ ᱦᱩᱭᱩᱜ-ᱟ?",
+          "santhali_phonetic": "2 + 1 tinag huyug-a?",
+          "answer": "3"
+        }
+      ]
+    },
+    {
+      "lesson_id": "LES-L1-01",
+      "fln_outcome_id": "FLN-L1-LO1",
+      "grade": 1,
+      "subject": "Language (Foundational Literacy)",
+      "domain": "Oral Language Development",
+      "title_hindi": "कक्षा निर्देश और बातचीत",
+      "title_santhali": "ᱠᱞᱟᱥ ᱨᱮᱱᱟᱜ ᱦᱩᱠᱩᱢ ᱟᱨ ᱜᱟᱞᱢᱟᱨᱟᱣ",
+      "concept": "Listening to instructions",
+      "intro": {
+        "hindi": "बच्चों, जब मैं कोई निर्देश दूँ, तो ध्यान से सुनिए और कीजिए।",
+        "santhali_olck": "ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ, ᱡᱚᱠᱷᱚᱱ ᱤᱧ ᱡᱟᱦᱟᱸᱱᱟᱜ ᱤᱧ ᱢᱮᱱᱟ, ᱩᱱ ᱡᱚᱦᱚᱜ ᱫᱷᱮᱭᱟᱱ ᱛᱮ ᱟᱸᱡᱚᱢ ᱯᱮ ᱟᱨ ᱠᱟᱹᱢᱤ ᱯᱮ᱾",
+        "santhali_phonetic": "Gidra ko, jokhon iñ jahanag iñ mena, un johog dhiyan te añjom pe ar kami pe."
+      },
+      "teacher_explanation": [
+        {
+          "step": 1,
+          "hindi": "सभी बच्चे अपनी जगह पर खड़े हो जाइए।",
+          "santhali_olck": "ᱡᱚᱛᱚ ᱜᱤᱫᱽᱨᱟᱹ ᱟᱯᱱᱟᱨ ᱴᱷᱟᱶ ᱨᱮ ᱛᱤᱸᱜᱩᱱ ᱯᱮ᱾",
+          "santhali_phonetic": "Joto gidra apnar thaw re tingun pe."
+        },
+        {
+          "step": 2,
+          "hindi": "अब सभी बच्चे बैठ जाइए और अपनी किताब खोलिए।",
+          "santhali_olck": "ᱱᱤᱛᱚᱜ ᱡᱚᱛᱚ ᱦᱚᱲ ᱫᱩᱲᱩᱵ ᱯᱮ ᱟᱨ ᱟᱯᱱᱟᱨ ᱯᱩᱛᱷᱤ ᱡᱷᱤᱡ ᱯᱮ᱾",
+          "santhali_phonetic": "Nitog joto hor durub pe ar apnar puthi jhij pe."
+        }
+      ],
+      "activity": {
+        "title_hindi": "सुनो और करो",
+        "title_santhali": "ᱟᱸᱡᱚᱢ ᱢᱮ ᱟᱨ ᱠᱟᱹᱢᱤ ᱢᱮ",
+        "instructions_hindi": "शिक्षक के निर्देश अनुसार ताली बजाइए और बैठिए।",
+        "instructions_santhali_olck": "ᱢᱟᱪᱮᱛ ᱟᱜ ᱦᱩᱠᱩᱢ ᱞᱮᱠᱟᱛᱮ ᱛᱷᱟᱭᱚ ᱯᱮ ᱟᱨ ᱫᱩᱲᱩᱵ ᱯᱮ᱾",
+        "instructions_santhali_phonetic": "Machet ag hukum lekate thayo pe ar durub pe."
+      },
+      "student_practice": {
+        "hindi": "ताली बजाइए!",
+        "santhali_olck": "ᱛᱷᱟᱭᱚ ᱯᱮ!",
+        "santhali_phonetic": "Thayo pe!"
+      },
+      "assessment": [
+        {
+          "question_num": 1,
+          "hindi": "क्या आपने किताब खोली?",
+          "santhali_olck": "ᱪᱮᱫ ᱟᱢ ᱯᱩᱛᱷᱤᱢ ᱡᱷᱤᱡ ᱠᱮᱫ-ᱟ?",
+          "santhali_phonetic": "Ched am puthim jhij ked-a?",
+          "answer": "Yes/No response"
+        }
+      ]
+    }
+  ]
+}

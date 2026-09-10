@@ -1,0 +1,57 @@
+{
+  "reviews": [
+    {
+      "review_id": "REV-1789055836-1",
+      "timestamp": 1789055836.4958215,
+      "hindi_text": "पाँच",
+      "ai_translation": "ᱢᱚᱬᱮ",
+      "target_language": "santhali",
+      "reviewer_name": "Birsa Hembram",
+      "status": "approved",
+      "corrected_translation": "ᱢᱚᱬᱮ",
+      "phonetic": "mone",
+      "domain": "mathematics",
+      "approved": true
+    },
+    {
+      "review_id": "REV-1789056012-2",
+      "timestamp": 1789056012.240683,
+      "hindi_text": "पाँच",
+      "ai_translation": "ᱢᱚᱬᱮ",
+      "target_language": "santhali",
+      "reviewer_name": "Birsa Hembram",
+      "status": "approved",
+      "corrected_translation": "ᱢᱚᱬᱮ",
+      "phonetic": "mone",
+      "domain": "mathematics",
+      "approved": true
+    },
+    {
+      "review_id": "REV-1789056597-3",
+      "timestamp": 1789056597.3730972,
+      "hindi_text": "पाँच",
+      "ai_translation": "ᱢᱚᱬᱮ",
+      "target_language": "santhali",
+      "reviewer_name": "Birsa Hembram",
+      "status": "approved",
+      "corrected_translation": "ᱢᱚᱬᱮ",
+      "phonetic": "mone",
+      "domain": "mathematics",
+      "approved": true
+    },
+    {
+      "review_id": "REV-1789057726-4",
+      "timestamp": 1789057726.7938282,
+      "hindi_text": "पाँच",
+      "ai_translation": "ᱢᱚᱬᱮ",
+      "target_language": "santhali",
+      "reviewer_name": "Birsa Hembram",
+      "status": "approved",
+      "corrected_translation": "ᱢᱚᱬᱮ",
+      "phonetic": "mone",
+      "domain": "mathematics",
+      "approved": true
+    }
+  ],
+  "total": 4
+}
