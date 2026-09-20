@@ -1,0 +1,34 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.sih.bhashai.test" >
+4
+5    <uses-sdk
+5-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:5:5-74
+6        android:minSdkVersion="28"
+6-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:5:15-41
+7        android:targetSdkVersion="34" />
+7-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:5:42-71
+8
+9    <instrumentation
+9-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:11:5-15:65
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:11:22-76
+11        android:functionalTest="false"
+11-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:14:22-52
+12        android:handleProfiling="false"
+12-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:13:22-53
+13        android:label="Tests for org.sih.bhashai"
+13-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:15:22-63
+14        android:targetPackage="org.sih.bhashai" />
+14-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:12:22-61
+15
+16    <application
+16-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:7:5-9:19
+17        android:debuggable="true"
+18        android:extractNativeLibs="false" >
+19        <uses-library android:name="android.test.runner" />
+19-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:8:9-60
+19-->G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest16817205024599031787.xml:8:23-57
+20    </application>
+21
+22</manifest>

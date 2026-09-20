@@ -1,0 +1,4 @@
+#Sun Sep 20 21:49:21 IST 2026
+base.0=G\:\\Programming\\Python Programming\\SIH Project\\BhashAI\\android\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

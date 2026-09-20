@@ -1,0 +1,35 @@
+org.sih.bhashai.app-jetified-core-ktx-1.9.0-0 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\07245a675a88b6445740e798289bfe39\transformed\jetified-core-ktx-1.9.0\res
+org.sih.bhashai.app-constraintlayout-2.0.1-1 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\0f7e477be4ae31105346c58668eaa83c\transformed\constraintlayout-2.0.1\res
+org.sih.bhashai.app-coordinatorlayout-1.1.0-2 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\17d05e7f1f00a068aabee43ca856d22e\transformed\coordinatorlayout-1.1.0\res
+org.sih.bhashai.app-jetified-lifecycle-viewmodel-savedstate-2.6.1-3 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\19f12cd28642b615d2424dabb8fe63c7\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\res
+org.sih.bhashai.app-core-1.9.0-4 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\1ba48e7a46549d6e285c12b18ad10990\transformed\core-1.9.0\res
+org.sih.bhashai.app-cardview-1.0.0-5 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\29c231630eceb89ff431e6b8b18fcb6d\transformed\cardview-1.0.0\res
+org.sih.bhashai.app-jetified-savedstate-1.2.1-6 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\444ccd406c9d2219a6a3cbecb264b553\transformed\jetified-savedstate-1.2.1\res
+org.sih.bhashai.app-appcompat-1.6.1-7 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\47e928f4f4223b1146f41cadcf9f63d0\transformed\appcompat-1.6.1\res
+org.sih.bhashai.app-jetified-appcompat-resources-1.6.1-8 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\52d07a29e9a1f586607935504f663e81\transformed\jetified-appcompat-resources-1.6.1\res
+org.sih.bhashai.app-transition-1.2.0-9 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\5361618338847547228bcdc3c14fd3e2\transformed\transition-1.2.0\res
+org.sih.bhashai.app-core-runtime-2.2.0-10 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\6ff102c752b3eadc6862783ba2ad3984\transformed\core-runtime-2.2.0\res
+org.sih.bhashai.app-jetified-activity-1.8.0-11 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\77f2cd3a2545787b15241bfab9b13c32\transformed\jetified-activity-1.8.0\res
+org.sih.bhashai.app-jetified-viewpager2-1.0.0-12 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\7e69e4a24a4d8c1ed8f1877619c118f5\transformed\jetified-viewpager2-1.0.0\res
+org.sih.bhashai.app-jetified-annotation-experimental-1.3.0-13 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\8445d654ec0dafb1655006685ead400b\transformed\jetified-annotation-experimental-1.3.0\res
+org.sih.bhashai.app-fragment-1.3.6-14 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\965cee633c8d887d5a3e2b4b095caa03\transformed\fragment-1.3.6\res
+org.sih.bhashai.app-lifecycle-runtime-2.6.1-15 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\97008168d54b064e6f25b633e5de0ad7\transformed\lifecycle-runtime-2.6.1\res
+org.sih.bhashai.app-jetified-profileinstaller-1.3.0-16 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\9b26d396e10ef68a4f332c6299c0ffec\transformed\jetified-profileinstaller-1.3.0\res
+org.sih.bhashai.app-recyclerview-1.1.0-17 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\b0320212765d8c06d7808efc32e90c85\transformed\recyclerview-1.1.0\res
+org.sih.bhashai.app-jetified-startup-runtime-1.1.1-18 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\b839c67379c584fbecdc5c0a108b062c\transformed\jetified-startup-runtime-1.1.1\res
+org.sih.bhashai.app-material-1.11.0-19 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\bc55ece3a38c21d5b7e8cab4d4caeb8b\transformed\material-1.11.0\res
+org.sih.bhashai.app-jetified-emoji2-views-helper-1.2.0-20 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\bdca33a9482ae132dbb5bb3fff566869\transformed\jetified-emoji2-views-helper-1.2.0\res
+org.sih.bhashai.app-jetified-emoji2-1.2.0-21 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\c1da7ab6cb7cc87b6a302e26ee3c9c62\transformed\jetified-emoji2-1.2.0\res
+org.sih.bhashai.app-lifecycle-livedata-2.6.1-22 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\c920c2f0288958248c27de01d8e8b5e2\transformed\lifecycle-livedata-2.6.1\res
+org.sih.bhashai.app-drawerlayout-1.1.1-23 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\cd8b931d954f081ee1b9d79d282fb106\transformed\drawerlayout-1.1.1\res
+org.sih.bhashai.app-jetified-lifecycle-process-2.6.1-24 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\e8d29a830078e08380df9aa8b376df3a\transformed\jetified-lifecycle-process-2.6.1\res
+org.sih.bhashai.app-lifecycle-viewmodel-2.6.1-25 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\ea523f70b593d2682615b5acb2e87e10\transformed\lifecycle-viewmodel-2.6.1\res
+org.sih.bhashai.app-lifecycle-livedata-core-2.6.1-26 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\ee47885033673a8bbabbdbc912e6083a\transformed\lifecycle-livedata-core-2.6.1\res
+org.sih.bhashai.app-webkit-1.10.0-27 C:\Users\G.Ganesh Kumar\.gradle\caches\8.9\transforms\ee586baf479922402ef701574e9ecac9\transformed\webkit-1.10.0\res
+org.sih.bhashai.app-pngs-28 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\generated\res\pngs\debug
+org.sih.bhashai.app-resValues-29 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\generated\res\resValues\debug
+org.sih.bhashai.app-packageDebugResources-30 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+org.sih.bhashai.app-packageDebugResources-31 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+org.sih.bhashai.app-merged_res-32 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\merged_res\debug
+org.sih.bhashai.app-debug-33 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\src\debug\res
+org.sih.bhashai.app-main-34 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\src\main\res

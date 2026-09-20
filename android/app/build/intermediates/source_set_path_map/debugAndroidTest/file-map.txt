@@ -1,0 +1,4 @@
+org.sih.bhashai.test.app-androidTest-0 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\generated\res\resValues\androidTest\debug
+org.sih.bhashai.test.app-mergeDebugAndroidTestResources-1 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+org.sih.bhashai.test.app-mergeDebugAndroidTestResources-2 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+org.sih.bhashai.test.app-merged_res-3 G:\Programming\Python Programming\SIH Project\BhashAI\android\app\build\intermediates\merged_res\debugAndroidTest
