@@ -870,19 +870,86 @@
       { cat: 'questions', hi: 'क्या कोई सवाल है?', sat: 'ᱪᱮᱫ ᱠᱩᱠᱞᱤ ᱢᱮᱱᱟᱜ-ᱟ?', pho: 'Ched kukli menag-a?', deva: 'चेद कुकली मेनाग-आ', audio: 'cmd_ched_kukli.mp3' }
     ];
 
-    // 2. Comprehensive Vocabulary Lexicon (300+ Words across 12 Domains)
+    // 2. Comprehensive Vocabulary Lexicon without word-level audio pollution
     const LEXICON = {
+      // Pronouns & Core Grammar
+      'हम': { sat: 'ᱟᱵᱚ', pho: 'abo', deva: 'आबो' },
+      'आप': { sat: 'ᱟᱯᱮ', pho: 'ape', deva: 'आपे' },
+      'तुम': { sat: 'ᱟᱢ', pho: 'am', deva: 'आम' },
+      'तू': { sat: 'ᱟᱢ', pho: 'am', deva: 'आम' },
+      'मैं': { sat: 'ᱤᱧ', pho: 'iñ', deva: 'इंज' },
+      'मेरा': { sat: 'ᱤᱧᱟᱜ', pho: 'iñag', deva: 'इंजाग' },
+      'मेरी': { sat: 'ᱤᱧᱟᱜ', pho: 'iñag', deva: 'इंजाग' },
+      'मेरे': { sat: 'ᱤᱧᱟᱜ', pho: 'iñag', deva: 'इंजाग' },
+      'तुम्हारा': { sat: 'ᱟᱢᱟᱜ', pho: 'amag', deva: 'आमाग' },
+      'तुम्हारी': { sat: 'ᱟᱢᱟᱜ', pho: 'amag', deva: 'आमाग' },
+      'तुम्हारे': { sat: 'ᱟᱢᱟᱜ', pho: 'amag', deva: 'आमाग' },
+      'आपका': { sat: 'ᱟᱯᱮᱭᱟᱜ', pho: 'apeyag', deva: 'आपेयाग' },
+      'आपकी': { sat: 'ᱟᱯᱮᱭᱟᱜ', pho: 'apeyag', deva: 'आपेयाग' },
+      'आपके': { sat: 'ᱟᱯᱮᱭᱟᱜ', pho: 'apeyag', deva: 'आपेयाग' },
+      'हमारा': { sat: 'ᱟᱵᱚᱣᱟᱜ', pho: 'abowag', deva: 'आबोवाग' },
+      'हमारी': { sat: 'ᱟᱵᱚᱣᱟᱜ', pho: 'abowag', deva: 'आबोवाग' },
+      'हमारे': { sat: 'ᱟᱵᱚᱣᱟᱜ', pho: 'abowag', deva: 'आबोवाग' },
+      'यह': { sat: 'ᱱᱚᱣᱟ', pho: 'nowa', deva: 'नोवा' },
+      'ये': { sat: 'ᱱᱚᱣᱟ ᱠᱚ', pho: 'nowa ko', deva: 'नोवा को' },
+      'वह': { sat: 'ᱚᱱᱟ', pho: 'ona', deva: 'ओना' },
+      'वे': { sat: 'ᱚᱱᱟ ᱠᱚ', pho: 'ona ko', deva: 'ओना को' },
+      'और': { sat: 'ᱟᱨ', pho: 'ar', deva: 'आर' },
+      'भी': { sat: 'ᱦᱚᱸ', pho: 'hoñ', deva: 'हों' },
+      'है': { sat: 'ᱠᱟᱱᱟ', pho: 'kana', deva: 'काना' },
+      'हैं': { sat: 'ᱠᱟᱱᱟ ᱠᱚ', pho: 'kana ko', deva: 'काना को' },
+      'हूँ': { sat: 'ᱠᱟᱱᱟᱹᱧ', pho: 'kanañ', deva: 'कानांज' },
+      'हो': { sat: 'ᱠᱟᱱᱟᱢ', pho: 'kanam', deva: 'कानाम' },
+      'था': { sat: 'ᱛᱟᱦᱮᱸ ᱠᱟᱱᱟ', pho: 'taheñ kana', deva: 'ताहें काना' },
+      'थे': { sat: 'ᱛᱟᱦᱮᱸ ᱠᱟᱱᱟ ᱠᱚ', pho: 'taheñ kana ko', deva: 'ताहें काना को' },
+      'थी': { sat: 'ᱛᱟᱦᱮᱸ ᱠᱟᱱᱟ', pho: 'taheñ kana', deva: 'ताहें काना' },
+      'नहीं': { sat: 'ᱵᱟᱝ', pho: 'bang', deva: 'बांग' },
+      'हाँ': { sat: 'ᱦᱮᱸ', pho: 'heñ', deva: 'हेंज' },
+      'क्या': { sat: 'ᱪᱮᱫ', pho: 'ched', deva: 'चेद' },
+      'कहाँ': { sat: 'ᱚᱠᱟᱨᱮ', pho: 'okarem', deva: 'ओकारेम' },
+      'कैसे': { sat: 'ᱪᱮᱫ ᱞᱮᱠᱟ', pho: 'ched leka', deva: 'चेद लेका' },
+      'क्यों': { sat: 'ᱪᱮᱫᱟᱜ', pho: 'chedag', deva: 'चेदाग' },
+      'कौन': { sat: 'ᱚᱠᱚᱭ', pho: 'okoy', deva: 'ओकोय' },
+      'कब': { sat: 'ᱛᱤᱥ', pho: 'tis', deva: 'तिस' },
+      'यहाँ': { sat: 'ᱱᱚᱸᱰᱮ', pho: 'nonde', deva: 'नोंडे' },
+      'वहाँ': { sat: 'ᱦᱟᱸᱰᱮ', pho: 'hande', deva: 'हांडे' },
+      'सब': { sat: 'ᱡᱚᱛᱚ', pho: 'joto', deva: 'जोतो' },
+      'सभी': { sat: 'ᱡᱚᱛᱚ', pho: 'joto', deva: 'जोतो' },
+      'लोग': { sat: 'ᱦᱚᱲ ᱠᱚ', pho: 'hor ko', deva: 'होड़ को' },
+      'नाम': { sat: 'ᱧᱩᱛᱩᱢ', pho: 'ñutum', deva: 'न्युतुम' },
+      'बात': { sat: 'ᱠᱟᱛᱷᱟ', pho: 'katha', deva: 'काथा' },
+      'काम': { sat: 'ᱠᱟᱹᱢᱤ', pho: 'kami', deva: 'कामी' },
+      'दिन': { sat: 'ᱢᱟᱦᱟ', pho: 'maha', deva: 'माहा' },
+      'आज': { sat: 'ᱛᱮᱦᱮᱧ', pho: 'teheñ', deva: 'तेहेंज' },
+      'कल': { sat: 'ᱜᱟᱯᱟ', pho: 'gapa', deva: 'गापा' },
+      'समय': { sat: 'ᱚᱠᱛᱚ', pho: 'okto', deva: 'ओक्तो' },
+      'अच्छा': { sat: 'ᱵᱷᱟᱹᱜᱤ', pho: 'bhagi', deva: 'भागी' },
+      'बहुत': { sat: 'ᱟᱹᱰᱤ', pho: 'adi', deva: 'आडी' },
+      'बड़ा': { sat: 'ᱢᱟᱨᱟᱝ', pho: 'marang', deva: 'मारांग' },
+      'छोटा': { sat: 'ᱠᱟᱹᱴᱤᱡ', pho: 'katij', deva: 'काटिज' },
+      'सुंदर': { sat: 'ᱪᱮᱦᱨᱟ', pho: 'chehra', deva: 'चेहरा' },
+      'नया': { sat: 'ᱱᱟᱣᱟ', pho: 'nawa', deva: 'नावा' },
+      'पुराना': { sat: 'ᱢᱟᱨᱮ', pho: 'mare', deva: 'मारे' },
+      'ठीक': { sat: 'ᱴᱷᱤᱠ', pho: 'thik', deva: 'ठीक' },
+      'गणित': { sat: 'ᱜᱬᱤᱛ', pho: 'ganit', deva: 'गणित' },
+      'पाठ': { sat: 'ᱯᱟᱴᱷ', pho: 'path', deva: 'पाठ' },
+      'छुट्टी': { sat: 'ᱪᱷᱩᱴᱤ', pho: 'chuti', deva: 'छुटी' },
+      'नमस्ते': { sat: 'ᱡᱚᱦᱟᱨ', pho: 'johar', deva: 'जोहार' },
+      'सुप्रभात': { sat: 'ᱡᱚᱦᱟᱨ', pho: 'johar', deva: 'जोहार' },
+      'प्रणाम': { sat: 'ᱡᱚᱦᱟᱨ', pho: 'johar', deva: 'जोहार' },
+      'जोहार': { sat: 'ᱡᱚᱦᱟᱨ', pho: 'johar', deva: 'जोहार' },
+
       // Numbers
-      'एक': { sat: 'ᱢᱤᱫ', pho: 'mid', deva: 'मिद', audio: 'fc_apple.mp3' },
-      'दो': { sat: 'ᱵᱟᱨ', pho: 'bar', deva: 'बार', audio: 'fc_leaves.mp3' },
-      'तीन': { sat: 'ᱯᱮ', pho: 'pe', deva: 'पे', audio: 'fc_birds.mp3' },
-      'चार': { sat: 'ᱯᱩᱱ', pho: 'pun', deva: 'पून', audio: 'fc_pencils.mp3' },
-      'पाँच': { sat: 'ᱢᱚᱬᱮ', pho: 'mone', deva: 'मोणे', audio: 'fc_stars.mp3' },
-      'छह': { sat: 'ᱛᱩᱨᱩᱭ', pho: 'turui', deva: 'तुरुय', audio: 'counting_1_10.mp3' },
-      'सात': { sat: 'ᱮᱭᱟᱭ', pho: 'eay', deva: 'एयाय', audio: 'counting_1_10.mp3' },
-      'आठ': { sat: 'ᱤᱨᱟᱹᱞ', pho: 'iral', deva: 'इराल्', audio: 'counting_1_10.mp3' },
-      'नौ': { sat: 'ᱟᱨᱮ', pho: 'are', deva: 'आरे', audio: 'counting_1_10.mp3' },
-      'दस': { sat: 'ᱜᱮᱞ', pho: 'gel', deva: 'गेल', audio: 'counting_1_10.mp3' },
+      'एक': { sat: 'ᱢᱤᱫ', pho: 'mid', deva: 'मिद' },
+      'दो': { sat: 'ᱵᱟᱨ', pho: 'bar', deva: 'बार' },
+      'तीन': { sat: 'ᱯᱮ', pho: 'pe', deva: 'पे' },
+      'चार': { sat: 'ᱯᱩᱱ', pho: 'pun', deva: 'पून' },
+      'पाँच': { sat: 'ᱢᱚᱬᱮ', pho: 'mone', deva: 'मोणे' },
+      'छह': { sat: 'ᱛᱩᱨᱩᱭ', pho: 'turui', deva: 'तुरुय' },
+      'सात': { sat: 'ᱮᱭᱟᱭ', pho: 'eay', deva: 'एयाय' },
+      'आठ': { sat: 'ᱤᱨᱟᱹᱞ', pho: 'iral', deva: 'इराल्' },
+      'नौ': { sat: 'ᱟᱨᱮ', pho: 'are', deva: 'आरे' },
+      'दस': { sat: 'ᱜᱮᱞ', pho: 'gel', deva: 'गेल' },
       'बीस': { sat: 'ᱤᱥᱤ', pho: 'isi', deva: 'इसी' },
       'तीस': { sat: 'ᱯᱮ ᱜᱮᱞ', pho: 'pe gel', deva: 'पे गेल' },
       'चालीस': { sat: 'ᱯᱩᱱ ᱜᱮᱞ', pho: 'pun gel', deva: 'पून गेल' },
@@ -890,67 +957,116 @@
       'सौ': { sat: 'ᱥᱟᱭ', pho: 'say', deva: 'साय' },
 
       // School & Classroom
-      'किताब': { sat: 'ᱯᱩᱛᱷᱤ', pho: 'puthi', deva: 'पुथी', audio: 'fc_book.mp3' },
-      'पुस्तक': { sat: 'ᱯᱩᱛᱷᱤ', pho: 'puthi', deva: 'पुथी', audio: 'fc_book.mp3' },
-      'कॉपी': { sat: 'ᱠᱚᱯᱤ', pho: 'copy', deva: 'कॉपी', audio: 'cmd_copy_uduk_pe.mp3' },
-      'कलम': { sat: 'ᱠᱚᱞᱚᱢ', pho: 'kolom', deva: 'कोलोम', audio: 'fc_pen.mp3' },
-      'पेंसिल': { sat: 'ᱯᱮᱱᱥᱤᱞ', pho: 'pencil', deva: 'पेन्सिल', audio: 'fc_pencils.mp3' },
+      'किताब': { sat: 'ᱯᱩᱛᱷᱤ', pho: 'puthi', deva: 'पुथी' },
+      'पुस्तक': { sat: 'ᱯᱩᱛᱷᱤ', pho: 'puthi', deva: 'पुथी' },
+      'कॉपी': { sat: 'ᱠᱚᱯᱤ', pho: 'copy', deva: 'कॉपी' },
+      'कलम': { sat: 'ᱠᱚᱞᱚᱢ', pho: 'kolom', deva: 'कोलोम' },
+      'पेंसिल': { sat: 'ᱯᱮᱱᱥᱤᱞ', pho: 'pencil', deva: 'पेन्सिल' },
       'स्लेट': { sat: 'ᱥᱞᱮᱴ', pho: 'slate', deva: 'स्लेट' },
       'चाक': { sat: 'ᱪᱚᱠ', pho: 'chalk', deva: 'चोक' },
-      'बस्ता': { sat: 'ᱛᱷᱚᱞᱤ', pho: 'tholi', deva: 'थोली' },
-      'मेज': { sat: 'ᱢᱮᱡᱽ', pho: 'mej', deva: 'मेज' },
-      'कुर्सी': { sat: 'ᱪᱚᱣᱠᱤ', pho: 'chowki', deva: 'चौकी' },
       'कमरा': { sat: 'ᱚᱲᱟᱜ', pho: 'orag', deva: 'ओड़ाग' },
+      'घर': { sat: 'ᱚᱲᱟᱜ', pho: 'orag', deva: 'ओड़ाग' },
       'कक्षा': { sat: 'ᱠᱞᱟᱥ', pho: 'class', deva: 'क्लास' },
       'स्कूल': { sat: 'ᱤᱥᱠᱩᱞ', pho: 'iskul', deva: 'इस्कूल' },
       'विद्यालय': { sat: 'ᱤᱥᱠᱩᱞ', pho: 'iskul', deva: 'इस्कूल' },
       'शिक्षक': { sat: 'ᱢᱟᱪᱮᱛ', pho: 'machet', deva: 'माचेत' },
       'गुरुजी': { sat: 'ᱢᱟᱪᱮᱛ', pho: 'machet', deva: 'माचेत' },
-      'बच्चे': { sat: 'ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ', pho: 'gidra ko', deva: 'गिदरा को', audio: 'johar_gidra_ko.mp3' },
-      'बच्चों': { sat: 'ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ', pho: 'gidra ko', deva: 'गिदरा को', audio: 'johar_gidra_ko.mp3' },
+      'बच्चे': { sat: 'ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ', pho: 'gidra ko', deva: 'गिदरा को' },
+      'बच्चों': { sat: 'ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ', pho: 'gidra ko', deva: 'गिदरा को' },
       'लड़का': { sat: 'ᱠᱚᱲᱟ', pho: 'kora', deva: 'कोड़ा' },
       'लड़की': { sat: 'ᱠᱩᱲᱤ', pho: 'kuri', deva: 'कुड़ी' },
 
       // Nature, Animals & Everyday
-      'पानी': { sat: 'ᱫᱟᱜ', pho: 'dak', deva: 'दाग्', audio: 'fc_water.mp3' },
-      'पेड़': { sat: 'ᱫᱟᱨᱮ', pho: 'dare', deva: 'दारे', audio: 'fc_tree.mp3' },
-      'पत्ता': { sat: 'ᱥᱟᱠᱟᱢ', pho: 'sakam', deva: 'साकाम', audio: 'fc_leaves.mp3' },
-      'पत्ते': { sat: 'ᱥᱟᱠᱟᱢ ᱠᱚ', pho: 'sakam ko', deva: 'साकाम को', audio: 'fc_leaves.mp3' },
-      'फूल': { sat: 'ᱵᱟᱦᱟ', pho: 'baha', deva: 'बाहा', audio: 'fc_flower.mp3' },
+      'पानी': { sat: 'ᱫᱟᱜ', pho: 'dak', deva: 'दाग्' },
+      'जल': { sat: 'ᱫᱟᱜ', pho: 'dak', deva: 'दाग्' },
+      'पेड़': { sat: 'ᱫᱟᱨᱮ', pho: 'dare', deva: 'दारे' },
+      'पत्ता': { sat: 'ᱥᱟᱠᱟᱢ', pho: 'sakam', deva: 'साकाम' },
+      'पत्ते': { sat: 'ᱥᱟᱠᱟᱢ ᱠᱚ', pho: 'sakam ko', deva: 'साकाम को' },
+      'फूल': { sat: 'ᱵᱟᱦᱟ', pho: 'baha', deva: 'बाहा' },
       'फल': { sat: 'ᱡᱚ', pho: 'jo', deva: 'जो' },
       'घास': { sat: 'ᱜᱷᱟᱸᱥ', pho: 'ghas', deva: 'घांस' },
-      'कंकड़': { sat: 'ᱫᱷᱤᱨᱤ', pho: 'dhiri', deva: 'धिरी', audio: 'fc_stone.mp3' },
-      'पत्थर': { sat: 'ᱫᱷᱤᱨᱤ', pho: 'dhiri', deva: 'धिरी', audio: 'fc_stone.mp3' },
-      'सूरज': { sat: 'ᱥᱤᱧ', pho: 'siñ', deva: 'सिंज', audio: 'fc_sun.mp3' },
-      'चाँद': { sat: 'ᱪᱟᱸᱫᱚ', pho: 'chando', deva: 'चांदो', audio: 'fc_moon.mp3' },
-      'तारे': { sat: 'ᱤᱯᱤᱞ ᱠᱚ', pho: 'ipil ko', deva: 'इपिल को', audio: 'fc_stars.mp3' },
-      'तारा': { sat: 'ᱤᱯᱤᱞ', pho: 'ipil', deva: 'इपिल', audio: 'fc_stars.mp3' },
-      'कुत्ता': { sat: 'ᱥᱮᱛᱟ', pho: 'seta', deva: 'सेता', audio: 'fc_dog.mp3' },
-      'बिल्ली': { sat: 'ᱯᱩᱥᱤ', pho: 'pusi', deva: 'पुसी', audio: 'fc_cat.mp3' },
-      'चिड़िया': { sat: 'ᱪᱮᱬᱮ', pho: 'chene', deva: 'चेणे', audio: 'fc_birds.mp3' },
+      'कंकड़': { sat: 'ᱫᱷᱤᱨᱤ', pho: 'dhiri', deva: 'धिरी' },
+      'पत्थर': { sat: 'ᱫᱷᱤᱨᱤ', pho: 'dhiri', deva: 'धिरी' },
+      'सूरज': { sat: 'ᱥᱤᱧ', pho: 'siñ', deva: 'सिंज' },
+      'धूप': { sat: 'ᱥᱤᱧ', pho: 'siñ', deva: 'सिंज' },
+      'चाँद': { sat: 'ᱪᱟᱸᱫᱚ', pho: 'chando', deva: 'चांदो' },
+      'चांद': { sat: 'ᱪᱟᱸᱫᱚ', pho: 'chando', deva: 'चांदो' },
+      'तारे': { sat: 'ᱤᱯᱤᱞ ᱠᱚ', pho: 'ipil ko', deva: 'इपिल को' },
+      'तारा': { sat: 'ᱤᱯᱤᱞ', pho: 'ipil', deva: 'इपिल' },
+      'कुत्ता': { sat: 'ᱥᱮᱛᱟ', pho: 'seta', deva: 'सेता' },
+      'बिल्ली': { sat: 'ᱯᱩᱥᱤ', pho: 'pusi', deva: 'पुसी' },
+      'चिड़िया': { sat: 'ᱪᱮᱬᱮ', pho: 'chene', deva: 'चेणे' },
       'गाय': { sat: 'ᱜᱟᱹᱭ', pho: 'gai', deva: 'गई' },
-      'बैल': { sat: 'ᱰᱟᱝᱜᱽᱨᱟ', pho: 'dangra', deva: 'डांगरा' },
-      'बकरी': { sat: 'ᱢᱮᱨᱚᱢ', pho: 'merom', deva: 'मेरोम' },
       'मछली': { sat: 'ᱦᱟᱹᱠᱩ', pho: 'haku', deva: 'हाकू' },
       'हाथी': { sat: 'ᱦᱟᱹᱛᱤ', pho: 'hati', deva: 'हाती' },
-      'बाघ': { sat: 'ᱠᱩᱞ', pho: 'kul', deva: 'कूल' },
-
-      // Colors
-      'लाल': { sat: 'ᱟᱨᱟᱜ', pho: 'arag', deva: 'आराग' },
-      'हरा': { sat: 'ᱦᱟᱹᱨᱤᱭᱟᱹᱲ', pho: 'hariyar', deva: 'हरियाड़' },
-      'सफेद': { sat: 'ᱯᱩᱸᱰ', pho: 'pund', deva: 'पुंड' },
-      'काला': { sat: 'ᱦᱮᱸᱫᱮ', pho: 'hende', deva: 'हेंदे' },
-      'पीला': { sat: 'ᱥᱟᱥᱟᱝ', pho: 'sasang', deva: 'सासांग' },
-      'नीला': { sat: 'ᱞᱤᱞ', pho: 'lil', deva: 'लील' },
+      'सेब': { sat: 'ᱥᱮᱣ', pho: 'sew', deva: 'सेव' },
+      'बाजार': { sat: 'ᱦᱟᱴ', pho: 'hat', deva: 'हाट' },
+      'मैदान': { sat: 'ᱴᱟᱺᱰᱤ', pho: 'tandi', deva: 'तांडी' },
 
       // Body Parts
-      'हाथ': { sat: 'ᱛᱤ', pho: 'ti', deva: 'ती', audio: 'cmd_ti_tul_pe.mp3' },
+      'हाथ': { sat: 'ᱛᱤ', pho: 'ti', deva: 'ती' },
       'पैर': { sat: 'ᱡᱟᱝᱜᱟ', pho: 'janga', deva: 'जांगा' },
       'आँख': { sat: 'ᱢᱮᱫ', pho: 'med', deva: 'मेद' },
+      'आंख': { sat: 'ᱢᱮᱫ', pho: 'med', deva: 'मेद' },
       'कान': { sat: 'ᱞᱩᱛᱩᱨ', pho: 'lutur', deva: 'लुत्तुर' },
-      'नाक': { sat: 'ᱢᱩᱸ', pho: 'mu', deva: 'मूं' },
-      'मुँह': { sat: 'ᱢᱚᱪᱟ', pho: 'mocha', deva: 'मोचा' },
-      'सिर': { sat: 'ᱵᱚᱦᱚᱜ', pho: 'bohog', deva: 'बोहोग' }
+      'सिर': { sat: 'ᱵᱚᱦᱚᱜ', pho: 'bohog', deva: 'बोहोग' },
+
+      // Verbs & Actions
+      'खोलिए': { sat: 'ᱡᱷᱤᱡ ᱯᱮ', pho: 'jhij pe', deva: 'झिज पे' },
+      'खोलो': { sat: 'ᱡᱷᱤᱡ ᱯᱮ', pho: 'jhij pe', deva: 'झिज पे' },
+      'खोल': { sat: 'ᱡᱷᱤᱡ', pho: 'jhij', deva: 'झिज' },
+      'बैठिए': { sat: 'ᱫᱩᱲᱩᱵ ᱯᱮ', pho: 'durub pe', deva: 'दुरुब पे' },
+      'बैठो': { sat: 'ᱫᱩᱲᱩᱵ ᱯᱮ', pho: 'durub pe', deva: 'दुरुब पे' },
+      'बैठ': { sat: 'ᱫᱩᱲᱩᱵ', pho: 'durub', deva: 'दुरुब' },
+      'उठिए': { sat: 'ᱛᱤᱸᱜᱩᱱ ᱯᱮ', pho: 'tingun pe', deva: 'तिंगुन पे' },
+      'उठो': { sat: 'ᱛᱤᱸᱜᱩᱱ ᱯᱮ', pho: 'tingun pe', deva: 'तिंगुन पे' },
+      'खड़े': { sat: 'ᱛᱤᱸᱜᱩᱱ', pho: 'tingun', deva: 'तिंगुन' },
+      'लिखिए': { sat: 'ᱚᱞ ᱯᱮ', pho: 'ol pe', deva: 'ओल पे' },
+      'लिखो': { sat: 'ᱚᱞ ᱯᱮ', pho: 'ol pe', deva: 'ओल पे' },
+      'लिख': { sat: 'ᱚᱞ', pho: 'ol', deva: 'ओल' },
+      'पढ़िए': { sat: 'ᱯᱟᱲᱦᱟᱣ ᱯᱮ', pho: 'parhaw pe', deva: 'पाड़हाव पे' },
+      'पढ़ो': { sat: 'ᱯᱟᱲᱦᱟᱣ ᱯᱮ', pho: 'parhaw pe', deva: 'पाड़हाव पे' },
+      'पढ़ेंगे': { sat: 'ᱯᱟᱲᱦᱟᱣ-ᱟ', pho: 'parhaw-a', deva: 'पाड़हाव-आ' },
+      'पढ़': { sat: 'ᱯᱟᱲᱦᱟᱣ', pho: 'parhaw', deva: 'पाड़हाव' },
+      'सीखेंगे': { sat: 'ᱪᱮᱫ-ᱟ', pho: 'ched-a', deva: 'चेद-आ' },
+      'सुनिए': { sat: 'ᱟᱸᱡᱚᱢ ᱯᱮ', pho: 'añjom pe', deva: 'आंजोम पे' },
+      'सुनो': { sat: 'ᱟᱸᱡᱚᱢ ᱯᱮ', pho: 'añjom pe', deva: 'आंजोम पे' },
+      'सुन': { sat: 'ᱟᱸᱡᱚᱢ', pho: 'añjom', deva: 'आंजोम' },
+      'बोलिए': { sat: 'ᱨᱚᱲ ᱯᱮ', pho: 'ror pe', deva: 'रोड़ पे' },
+      'बोलो': { sat: 'ᱨᱚᱲ ᱯᱮ', pho: 'ror pe', deva: 'रोड़ पे' },
+      'बोल': { sat: 'ᱨᱚᱲ', pho: 'ror', deva: 'रोड़' },
+      'गिनिए': { sat: 'ᱞᱮᱠᱷᱟᱭ ᱯᱮ', pho: 'lekhay pe', deva: 'लेखाय पे' },
+      'गिनो': { sat: 'ᱞᱮᱠᱷᱟᱭ ᱢᱮ', pho: 'lekhay me', deva: 'लेखाय मे' },
+      'गिन': { sat: 'ᱞᱮᱠᱷᱟ', pho: 'lekha', deva: 'लेखा' },
+      'गिनती': { sat: 'ᱞᱮᱠᱷᱟ', pho: 'lekha', deva: 'लेखा' },
+      'दिखाइए': { sat: 'ᱩᱫᱩᱜ ᱯᱮ', pho: 'udug pe', deva: 'उदुग पे' },
+      'दिखाओ': { sat: 'ᱩᱫᱩᱜ ᱯᱮ', pho: 'udug pe', deva: 'उदुग पे' },
+      'उठाइए': { sat: 'ᱛᱩᱞ ᱯᱮ', pho: 'tul pe', deva: 'तूल पे' },
+      'उठाओ': { sat: 'ᱛᱩᱞ ᱯᱮ', pho: 'tul pe', deva: 'तूल पे' },
+      'आइए': { sat: 'ᱦᱤᱡᱩᱜ ᱯᱮ', pho: 'hijug pe', deva: 'हिजुग पे' },
+      'आओ': { sat: 'ᱦᱤᱡᱩᱜ ᱯᱮ', pho: 'hijug pe', deva: 'हिजुग पे' },
+      'जाओ': { sat: 'ᱪᱟᱞᱟᱣ ᱢᱮ', pho: 'chalaw me', deva: 'चालाव मे' },
+      'जाना': { sat: 'ᱪᱟᱞᱟᱜ', pho: 'chalag', deva: 'चालाग' },
+      'जा': { sat: 'ᱪᱟᱞᱟᱜ', pho: 'chalag', deva: 'चालाग' },
+      'जाते': { sat: 'ᱪᱟᱞᱟᱜ ᱠᱟᱱᱟ', pho: 'chalag kana', deva: 'चालाग काना' },
+      'लाओ': { sat: 'ᱟᱹᱜᱩᱭ ᱢᱮ', pho: 'aguy me', deva: 'आगुय मे' },
+      'लाइए': { sat: 'ᱟᱹᱜᱩᱭ ᱯᱮ', pho: 'aguy pe', deva: 'आगुय पे' },
+      'पी': { sat: 'ᱧᱩᱭ', pho: 'ñuy', deva: 'न्यूय' },
+      'पीओ': { sat: 'ᱧᱩᱭ ᱢᱮ', pho: 'ñuy me', deva: 'न्यूय मे' },
+      'पीजिए': { sat: 'ᱧᱩᱭ ᱯᱮ', pho: 'ñuy pe', deva: 'न्यूय पे' },
+      'खाओ': { sat: 'ᱡᱚᱢ ᱢᱮ', pho: 'jom me', deva: 'जोम मे' },
+      'खाइए': { sat: 'ᱡᱚᱢ ᱯᱮ', pho: 'jom pe', deva: 'जोम पे' },
+      'खेल': { sat: 'ᱮᱱᱮᱡ', pho: 'enej', deva: 'एनेज' },
+      'खेलते': { sat: 'ᱮᱱᱮᱡ ᱠᱟᱱᱟ ᱠᱚ', pho: 'enej kana ko', deva: 'एनेज काना को' },
+      'खेलेंगे': { sat: 'ᱮᱱᱮᱡ-ᱟ ᱵᱚ', pho: 'enej-a bo', deva: 'एनेज-आ बो' },
+      'खेलना': { sat: 'ᱮᱱᱮᱡ', pho: 'enej', deva: 'एनेज' },
+      'फिर': { sat: 'ᱟᱫᱚ', pho: 'ado', deva: 'आदो' },
+      'में': { sat: 'ᱨᱮ', pho: 're', deva: 'रे' },
+      'से': { sat: 'ᱠᱷᱚᱱ', pho: 'khon', deva: 'खोन' },
+      'को': { sat: 'ᱫᱚ', pho: 'do', deva: 'दो' },
+      'का': { sat: 'ᱨᱮᱭᱟᱜ', pho: 'reyag', deva: 'रेयाग' },
+      'की': { sat: 'ᱨᱮᱭᱟᱜ', pho: 'reyag', deva: 'रेयाग' },
+      'के': { sat: 'ᱨᱮᱭᱟᱜ', pho: 'reyag', deva: 'रेयाग' }
     };
 
     // 3. Twenty Visual Pedagogical Flashcards with Dual Speech
@@ -988,38 +1104,7 @@
     let currentQuizWord = null;
     let activeCategory = 'all';
 
-    function escapeHtml(value) {
-      return String(value ?? '').replace(/[&<>"']/g, ch => ({
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#39;'
-      }[ch]));
-    }
-
-    function callArgs(...values) {
-      return values.map(v => JSON.stringify(String(v ?? ''))).join(',');
-    }
-
-    function normalizeHindiText(text) {
-      return String(text || '')
-        .replace(/[“”‘’]/g, '')
-        .replace(/[.,!?।॥;:]/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-    }
-
-    function translationBadge(trans) {
-      const source = trans.source || 'offline';
-      const confidence = Math.round((trans.confidence || 0.7) * 100);
-      const label = source === 'phrasebook' ? 'Verified phrase'
-        : source === 'keyword' ? 'Classroom command'
-        : source === 'lexicon' ? 'Dictionary'
-        : source === 'template' ? 'Teaching template'
-        : 'Needs review';
-      return `${label} · ${confidence}%`;
-    }
+    let voiceSequenceCounter = 0;
 
     /* Native Audio & Speech Dispatcher */
     function playVernacularAudio(audioFileName, devaPhonetic, romanPhonetic) {
@@ -1028,7 +1113,12 @@
         window.BhashAIBridge.vibrate(25);
       }
 
-      const fileToPlay = (audioFileName && audioFileName !== 'null' && audioFileName !== 'undefined') ? audioFileName : 'default_santali.mp3';
+      // Always stop previous audio to prevent overlapping playback
+      if (window.BhashAIBridge && window.BhashAIBridge.stopAudio) {
+        window.BhashAIBridge.stopAudio();
+      }
+
+      const fileToPlay = (audioFileName && audioFileName !== 'null' && audioFileName !== 'undefined' && audioFileName !== 'default_santali.mp3') ? audioFileName : '';
 
       // Android Java Native Bridge
       if (window.BhashAIBridge && window.BhashAIBridge.speakSantaliDeva) {
@@ -1036,9 +1126,25 @@
         return;
       }
 
-      // Browser Fallback (audio file)
-      const audio = new Audio('audio/' + fileToPlay);
-      audio.play().catch(() => {});
+      // Browser Fallback
+      if (fileToPlay) {
+        const audio = new Audio('audio/' + fileToPlay);
+        audio.play().catch(() => {
+          speakBrowserSantaliTTS(devaPhonetic || romanPhonetic);
+        });
+      } else {
+        speakBrowserSantaliTTS(devaPhonetic || romanPhonetic);
+      }
+    }
+
+    function speakBrowserSantaliTTS(text) {
+      if ('speechSynthesis' in window && text) {
+        window.speechSynthesis.cancel();
+        const utt = new SpeechSynthesisUtterance(text);
+        utt.lang = 'hi-IN';
+        utt.rate = 0.85;
+        window.speechSynthesis.speak(utt);
+      }
     }
 
     function speakHindiAudio(text) {
@@ -1128,11 +1234,15 @@
       });
     };
 
-    function processClassroomUtterance(hindiText) {
-      document.getElementById('live-speech-subtitle').innerText = `"${hindiText}"`;
+    function processClassroomUtterance(hindiText, autoSpeak = true) {
+      if (!hindiText || !hindiText.trim()) return;
+      const cleanText = hindiText.trim();
+      const requestId = ++voiceSequenceCounter;
+
+      document.getElementById('live-speech-subtitle').innerText = `"${cleanText}"`;
 
       // Smart Hierarchical Translation
-      const trans = translateClassroomSentence(hindiText);
+      const trans = translateClassroomSentence(cleanText);
 
       // Add to live feed
       const feed = document.getElementById('dialogue-feed');
@@ -1142,15 +1252,15 @@
       item.className = 'dialogue-card';
       item.innerHTML = `
         <div class="dialogue-meta">
-          <span>⏱️ ${escapeHtml(timeStr)} · Spoken Hindi</span>
-          <span style="color: var(--accent); font-weight: 700;">${escapeHtml(translationBadge(trans))}</span>
+          <span>⏱️ ${timeStr} · Spoken Hindi</span>
+          <span style="color: var(--accent); font-weight: 700;">Santali Ol Chiki</span>
         </div>
-        <div class="dialogue-hindi">"${escapeHtml(hindiText)}"</div>
-        <div class="dialogue-santali">${escapeHtml(trans.sat)}</div>
-        <div class="dialogue-phonetic">${escapeHtml(trans.pho)}</div>
+        <div class="dialogue-hindi">"${cleanText}"</div>
+        <div class="dialogue-santali">${trans.sat}</div>
+        <div class="dialogue-phonetic">${trans.pho}</div>
         <div class="dialogue-actions">
-          <button class="btn-act btn-act-primary" onclick='playVernacularAudio(${callArgs(trans.audio || '', trans.deva, trans.pho)})'>🔊 Speak Santali</button>
-          <button class="btn-act btn-act-outline" onclick='speakHindiAudio(${callArgs(hindiText)})'>🗣️ Read Hindi</button>
+          <button class="btn-act btn-act-primary" onclick="playVernacularAudio('${trans.audio || ''}', '${(trans.deva || '').replace(/'/g, "\\'")}', '${(trans.pho || '').replace(/'/g, "\\'")}')">🔊 Speak Santali</button>
+          <button class="btn-act btn-act-outline" onclick="speakHindiAudio('${cleanText.replace(/'/g, "\\'")}')">🗣️ Read Hindi</button>
         </div>
       `;
       feed.insertBefore(item, feed.firstChild);
@@ -1158,110 +1268,47 @@
       const items = feed.querySelectorAll('.dialogue-card');
       document.getElementById('dialogue-count').innerText = `${items.length} entries`;
 
-      // Auto-speak if enabled
-      if (document.getElementById('chk-auto-speak').checked) {
-        playVernacularAudio(trans.audio, trans.deva, trans.pho);
+      // Auto-speak if enabled and not superseded by a newer request
+      if (autoSpeak && document.getElementById('chk-auto-speak').checked) {
+        if (requestId === voiceSequenceCounter) {
+          playVernacularAudio(trans.audio, trans.deva, trans.pho);
+        }
       }
     }
 
 
-    const KEYWORD_AUDIO_MAP = [
-      { keys: ['किताब', 'किताबें', 'पुस्तक', 'पुस्तिका', 'खोल', 'खोलो', 'खोलिए', 'पन्ना', 'पाठ'], audio: 'puthi_jhij_pe.mp3', sat: 'ᱟᱯᱱᱟᱨ ᱯᱩᱛᱷᱤ ᱡᱷᱤᱡ ᱯᱮ ᱾', pho: 'Apnar puthi jhij pe.', deva: 'अपनार पुथी झिज पे' },
-      { keys: ['कॉपी', 'कापी', 'निकाल', 'निकालो', 'निकालिए'], audio: 'cmd_copy_uduk_pe.mp3', sat: 'ᱠᱚᱯᱤ ᱩᱰᱩᱠ ᱯᱮ ᱾', pho: 'Copy uduk pe.', deva: 'कॉपी उडुक पे' },
-      { keys: ['बैठ', 'बैठो', 'बैठिए', 'बैठ जाइए', 'स्थान', 'जगह'], audio: 'durub_pe.mp3', sat: 'ᱫᱩᱲᱩᱵ ᱯᱮ ᱾', pho: 'Durub pe.', deva: 'दुरुब पे' },
-      { keys: ['खड़े', 'खड़ा', 'खड़ी', 'खड़े हो', 'उठो', 'उठिए', 'खड़े हो जाओ'], audio: 'tingun_pe.mp3', sat: 'ᱛᱤᱸᱜᱩᱱ ᱯᱮ ᱾', pho: 'Tingun pe.', deva: 'तिंगुन पे' },
-      { keys: ['शांत', 'चुप', 'शोर', 'हल्ला', 'बातें मत', 'बात मत', 'आवाज मत', 'चुपचाप', 'खामोश'], audio: 'cmd_thir_tahen_pe.mp3', sat: 'ᱛᱷᱤᱨ ᱛᱟᱦᱮᱸᱱ ᱯᱮ ᱾', pho: 'Thir tahen pe.', deva: 'थिर ताहेन पे' },
-      { keys: ['ताली', 'तालियां', 'क्लैप'], audio: 'thayo_pe.mp3', sat: 'ᱛᱷᱟᱭᱚ ᱯᱮ ᱾', pho: 'Thayo pe.', deva: 'थायो पे' },
-      { keys: ['शाबाश', 'बढ़िया', 'अच्छा', 'बहुत अच्छा', 'वेरी गुड', 'शानदार', 'सुंदर'], audio: 'cmd_adi_napay.mp3', sat: 'ᱟᱹᱰᱤ ᱱᱟᱯᱟᱭ ᱾', pho: 'Adi napay.', deva: 'आडी नापाय' },
-      { keys: ['हाथ ऊपर', 'हाथ उठाओ', 'हाथ उठाइए', 'हाथ खड़ा', 'हाथ'], audio: 'cmd_ti_tul_pe.mp3', sat: 'ᱛᱤ ᱛᱩᱞ ᱯᱮ ᱾', pho: 'Ti tul pe.', deva: 'ती तूल पे' },
-      { keys: ['हाथ धो', 'धोकर', 'धोना', 'सफाई', 'हाथ साफ'], audio: 'cmd_ti_arub_pe.mp3', sat: 'ᱛᱤ ᱟᱹᱨᱩᱵ ᱯᱮ ᱾', pho: 'Ti arub pe.', deva: 'ती आरुब पे' },
-      { keys: ['कंकड़', 'पत्थर', 'गोटी', 'गोली'], audio: 'dhiri_udug_pe.mp3', sat: 'ᱫᱷᱤᱨᱤ ᱩᱫᱩᱜ ᱯᱮ ᱾', pho: 'Dhiri udug pe.', deva: 'धिरी उदुग पे' },
-      { keys: ['गिनती', 'गिन', 'गिनो', 'गिनिए', 'संख्या', 'एक दो तीन', '1 से 10', 'एक से दस'], audio: 'counting_1_10.mp3', sat: '᱑ ᱠᱷᱚᱱ ᱑᱐ ᱦᱟᱹᱵᱤᱡ ᱞᱮᱠᱷᱟ ᱢᱮᱱ ᱯᱮ ᱾', pho: 'Mid khon gel habij lekha men pe.', deva: 'मिद खोन गेल हबिज लेखा मेन पे' },
-      { keys: ['उंगली', 'अंगुली', 'उंगलियों'], audio: 'cmd_katub_te_lekhay_me.mp3', sat: 'ᱠᱟᱹᱴᱩᱵ ᱛᱮ ᱞᱮᱠᱷᱟᱭ ᱢᱮ ᱾', pho: 'Katub te lekhay me.', deva: 'काटुब ते लेखाय मे' },
-      { keys: ['जोड़', 'मिलाकर', 'कितने होते'], audio: 'addition_pencil.mp3', sat: 'ᱯᱮᱱᱥᱤᱞ ᱢᱮᱥᱟ ᱠᱟᱛᱮ ᱞᱮᱠᱷᱟᱭ ᱯᱮ ᱾', pho: 'Pencil mesa kate lekhay pe.', deva: 'पेन्सिल मेसा काते लेखाय पे' },
-      { keys: ['नमस्ते', 'जोहार', 'प्रणाम', 'सुप्रभात', 'गुड मॉर्निंग', 'नमस्कार', 'हेलो', 'हाय'], audio: 'johar_gidra_ko.mp3', sat: 'ᱡᱚᱦᱟᱨ ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ!', pho: 'Johar gidra ko!', deva: 'जोहार गिदरा को' },
-      { keys: ['पानी', 'प्यास', 'जल', 'पी लो', 'पीओ', 'पीजिए'], audio: 'fc_water.mp3', sat: 'ᱫᱟᱜ ᱧᱩᱭ ᱯᱮ ᱾', pho: 'Dak ñuy pe.', deva: 'दाग् न्यूय पे' },
-      { keys: ['पेंसिल', 'पेन्सिल'], audio: 'cmd_pencil_tul_pe.mp3', sat: 'ᱯᱮᱱᱥᱤᱞ ᱛᱩᱞ ᱯᱮ ᱾', pho: 'Pencil tul pe.', deva: 'पेन्सिल तूल पे' },
-      { keys: ['पत्ता', 'पत्ते', 'पत्तियां'], audio: 'fc_leaves.mp3', sat: 'ᱥᱟᱠᱟᱢ ᱠᱚ ᱞᱮᱠᱷᱟᱭ ᱯᱮ ᱾', pho: 'Sakam ko lekhay pe.', deva: 'साकाम को लेखाय पे' },
-      { keys: ['चिड़िया', 'पक्षी'], audio: 'fc_birds.mp3', sat: 'ᱯᱮᱭᱟ ᱪᱮᱬᱮ ᱾', pho: 'Peya chene.', deva: 'पेया चेणे' },
-      { keys: ['पेड़', 'वृक्ष', 'पौधा'], audio: 'fc_tree.mp3', sat: 'ᱫᱟᱨᱮ ᱾', pho: 'Dare.', deva: 'दारे' },
-      { keys: ['फूल', 'पुष्प'], audio: 'fc_flower.mp3', sat: 'ᱵᱟᱦᱟ ᱾', pho: 'Baha.', deva: 'बाहा' },
-      { keys: ['सेब', 'फल'], audio: 'fc_apple.mp3', sat: 'ᱢᱤᱫᱴᱟᱝ ᱥᱮᱣ ᱾', pho: 'Midtang sew.', deva: 'मिदतांग सेव' },
-      { keys: ['तारे', 'तारा', 'सितारे'], audio: 'fc_stars.mp3', sat: 'ᱢᱚᱬᱮᱭᱟ ᱤᱯᱤᱞ ᱾', pho: 'Moneya ipil.', deva: 'मोणेया इपिल' },
-      { keys: ['कुत्ता', 'कुत्ते'], audio: 'fc_dog.mp3', sat: 'ᱥᱮᱛᱟ ᱾', pho: 'Seta.', deva: 'सेता' },
-      { keys: ['बिल्ली'], audio: 'fc_cat.mp3', sat: 'ᱯᱩᱥᱤ ᱾', pho: 'Pusi.', deva: 'पुसी' },
-      { keys: ['मछली'], audio: 'fc_fish.mp3', sat: 'ᱦᱟᱹᱠᱩ ᱾', pho: 'Haku.', deva: 'हाकू' },
-      { keys: ['हाथी'], audio: 'fc_elephant.mp3', sat: 'ᱦᱟᱹᱛᱤ ᱾', pho: 'Hati.', deva: 'हाती' },
-      { keys: ['गाय'], audio: 'fc_cow.mp3', sat: 'ᱜᱟᱹᱭ ᱾', pho: 'Gai.', deva: 'गई' },
-      { keys: ['आँख', 'आंख'], audio: 'fc_eye.mp3', sat: 'ᱢᱮᱫ ᱾', pho: 'Med.', deva: 'मेद' },
-      { keys: ['सूरज', 'धूप', 'सूर्य'], audio: 'fc_sun.mp3', sat: 'ᱥᱤᱧ ᱾', pho: 'Siñ.', deva: 'सिंज' },
-      { keys: ['चाँद', 'चांद', 'चंद्रमा'], audio: 'fc_moon.mp3', sat: 'ᱪᱟᱸᱫᱚ ᱾', pho: 'Chando.', deva: 'चांदो' },
-      { keys: ['कलम', 'पेन'], audio: 'fc_pen.mp3', sat: 'ᱠᱚᱞᱚᱢ ᱾', pho: 'Kolom.', deva: 'कोलोम' },
-      { keys: ['लिख', 'लिखो', 'लिखिए', 'लेख', 'साफ साफ'], audio: 'cmd_pharcha_te_ol_pe.mp3', sat: 'ᱯᱷᱟᱨᱪᱟ ᱛᱮ ᱚᱞ ᱯᱮ ᱾', pho: 'Pharcha te ol pe.', deva: 'फारचा ते ओल पे' },
-      { keys: ['पढ़', 'पढ़ो', 'पढ़िए', 'वाचन', 'रीड'], audio: 'cmd_parhaw_pe.mp3', sat: 'ᱯᱟᱲᱦᱟᱣ ᱯᱮ ᱾', pho: 'Parhaw pe.', deva: 'पाड़हाव पे' },
-      { keys: ['सुन', 'सुनो', 'सुनिए', 'ध्यान', 'ध्यान दो'], audio: 'cmd_anjom_pe.mp3', sat: 'ᱟᱸᱡᱚᱢ ᱯᱮ ᱾', pho: 'Añjom pe.', deva: 'आंजोम पे' },
-      { keys: ['बोल', 'बोलो', 'बोलिए', 'कहो', 'बताओ'], audio: 'cmd_ror_pe.mp3', sat: 'ᱨᱚᱲ ᱯᱮ ᱾', pho: 'Ror pe.', deva: 'रोड़ पे' },
-      { keys: ['पंक्ति', 'लाइन', 'कतार'], audio: 'cmd_thar_re_tingun_pe.mp3', sat: 'ᱛᱷᱟᱨ ᱨᱮ ᱛᱤᱸᱜᱩᱱ ᱯᱮ ᱾', pho: 'Thar re tingun pe.', deva: 'थार रे तिंगुन पे' },
-      { keys: ['बोर्ड', 'श्यामपट्ट', 'ब्लैकबोर्ड', 'देखो', 'इधर देखो', 'सामने देखो'], audio: 'cmd_board_re_koyog_pe.mp3', sat: 'ᱵᱚᱨᱰ ᱨᱮ ᱠᱚᱭᱚᱜ ᱯᱮ ᱾', pho: 'Board re koyog pe.', deva: 'बोर्ड रे कोयोग पे' },
-      { keys: ['दोहरा', 'दोहराओ', 'दोहराइए', 'पीछे बोलो', 'मेरे बाद'], audio: 'cmd_ina_tayom_te_men_pe.mp3', sat: 'ᱤᱧᱟᱜ ᱛᱟᱭᱚᱢ ᱛᱮ ᱢᱮᱱ ᱯᱮ ᱾', pho: 'Iña tayom te men pe.', deva: 'इंजाग तायोम ते मेन पे' },
-      { keys: ['जोर से', 'ऊंची आवाज', 'तेज बोलो'], audio: 'cmd_adi_arang_te_men_pe.mp3', sat: 'ᱟᱹᱰᱤ ᱟᱲᱟᱝ ᱛᱮ ᱢᱮᱱ ᱯᱮ ᱾', pho: 'Adi arang te men pe.', deva: 'आडी आड़ांग ते मेन पे' },
-      { keys: ['सही', 'उत्तर', 'जवाब', 'ठीक'], audio: 'cmd_thik_tela_kana.mp3', sat: 'ᱴᱷᱤᱠ ᱛᱮᱞᱟ ᱠᱟᱱᱟ ᱾', pho: 'Thik tela kana.', deva: 'ठीक तेला काना' },
-      { keys: ['तुम्हारा नाम', 'नाम क्या', 'नाम बताओ', 'नाम'], audio: 'cmd_amag_nutum_ched.mp3', sat: 'ᱟᱢᱟᱜ ᱧᱩᱛᱩᱢ ᱫᱚ ᱪᱮᱫ?', pho: 'Amag ñutum do ched?', deva: 'आमाग न्युतुम दो चेद' },
-      { keys: ['कहाँ रहते', 'घर कहाँ', 'कहाँ'], audio: 'cmd_okarem_tahena.mp3', sat: 'ᱟᱢ ᱫᱚ ᱚᱠᱟᱨᱮᱢ ᱛᱟᱦᱮᱸᱱᱟ?', pho: 'Am do okarem tahena?', deva: 'आम दो ओकारेम ताहेना' },
-      { keys: ['समझ', 'समझे', 'समझ आया', 'कौन समझा'], audio: 'cmd_okoy_bujhaw_keda.mp3', sat: 'ᱚᱠᱚᱭ ᱮ ᱵᱩᱡᱷᱟᱹᱣ ᱠᱮᱫ-ᱟ?', pho: 'Okoy e bujhaw ked-a?', deva: 'ओकोय ए बुझाव केद-आ' },
-      { keys: ['दरवाजा', 'किवाड़', 'गेट'], audio: 'cmd_duwar_jhij_pe.mp3', sat: 'ᱫᱩᱣᱟᱹᱨ ᱡᱷᱤᱡ ᱯᱮ ᱾', pho: 'Duwar jhij pe.', deva: 'दुवार झिज पे' },
-      { keys: ['खिड़की'], audio: 'cmd_khirki_bondho_pe.mp3', sat: 'ᱠᱷᱤᱲᱠᱤ ᱵᱚᱸᱫᱽ ᱯᱮ ᱾', pho: 'Khirki bondho pe.', deva: 'खिड़की बोंद पे' },
-      { keys: ['कोशिश', 'प्रयास', 'फिर से'], audio: 'cmd_arho_chestaye_pe.mp3', sat: 'ᱟᱨᱦᱚᱸ ᱪᱮᱥᱴᱟᱭ ᱯᱮ ᱾', pho: 'Arho chestay pe.', deva: 'आरहों चेष्टाय पे' },
-      { keys: ['हाजिरी', 'उपस्थिति', 'अटेंडेंस'], audio: 'cmd_hajiri_men_pe.mp3', sat: 'ᱦᱟᱹᱡᱤᱨᱤ ᱢᱮᱱ ᱯᱮ ᱾', pho: 'Hajiri men pe.', deva: 'हाजिरी मेन पे' },
-      { keys: ['कितने बच्चे', 'कौन कौन आया', 'कितने आए'], audio: 'cmd_tinag_gidra.mp3', sat: 'ᱛᱮᱦᱮᱧ ᱛᱤᱱᱟᱹᱜ ᱜᱤᱫᱽᱨᱟᱹ ᱯᱮ ᱦᱮᱡ ᱟᱠᱟᱱᱟ?', pho: 'Teheñ tinag gidra pe hej akana?', deva: 'तेहेंज तिनाग गिदरा पे हेज आकाना' },
-      { keys: ['समय पर', 'रोज समय', 'देर मत'], audio: 'cmd_okto_re_hijug_pe.mp3', sat: 'ᱚᱠᱛᱚ ᱨᱮ ᱦᱤᱡᱩᱜ ᱯᱮ ᱾', pho: 'Okto re hijug pe.', deva: 'ओक्तो रे हिजुग पे' },
-      { keys: ['सवाल', 'प्रश्न', 'पूछो', 'पूछना'], audio: 'cmd_ched_kukli.mp3', sat: 'ᱪᱮᱫ ᱠᱩᱠᱞᱤ ᱢᱮᱱᱟᱜ-ᱟ?', pho: 'Ched kukli menag-a?', deva: 'चेद कुकली मेनाग-आ' }
-    ];
+    const DEVA_TO_OLCK = {
+      'अ': 'ᱚ', 'आ': 'ᱟ', 'इ': 'ᱤ', 'ई': 'ᱤ', 'उ': 'ᱩ', 'ऊ': 'ᱩ',
+      'ए': 'ᱮ', 'ऐ': 'ᱮ', 'ओ': 'ᱳ', 'औ': 'ᱳ',
+      'क': 'ᱠ', 'ख': 'ᱠᱷ', 'ग': 'ᱜ', 'घ': 'ᱜᱷ', 'ङ': 'ᱝ',
+      'च': 'ᱪ', 'छ': 'ᱪᱷ', 'ज': 'ᱡ', 'झ': 'ᱡᱷ', 'ञ': 'ᱧ',
+      'ट': 'ᱴ', 'ठ': 'ᱴᱷ', 'ड': 'ᱰ', 'ढ': 'ᱰᱷ', 'ण': 'ᱬ',
+      'त': 'ᱛ', 'थ': 'ᱛᱷ', 'द': 'ᱫ', 'ध': 'ᱫᱷ', 'न': 'ᱱ',
+      'प': 'ᱯ', 'फ': 'ᱯᱷ', 'ब': 'ᱵ', 'भ': 'ᱵᱷ', 'म': 'ᱢ',
+      'य': 'ᱭ', 'र': 'ᱨ', 'ल': 'ᱞ', 'व': 'ᱣ', 'श': 'ᱥ',
+      'ष': 'ᱥ', 'स': 'ᱥ', 'ह': 'ᱦ', 'ड़': 'ᱲ', 'ढ़': 'ᱲᱷ',
+      'ा': 'ᱟ', 'ि': 'ᱤ', 'ी': 'ᱤ', 'ु': 'ᱩ', 'ू': 'ᱩ',
+      'े': 'ᱮ', 'ै': 'ᱮ', 'ो': 'ᱳ', 'ौ': 'ᱳ',
+      'ं': 'ᱝ', 'ँ': 'ᱸ', 'ः': 'ᱷ', '्': '',
+      '।': '᱾', '॥': '᱿',
+      '०': '᱐', '१': '᱑', '२': '᱒', '३': '᱓', '४': '᱔',
+      '५': '᱕', '६': '᱖', '७': '᱗', '८': '᱘', '९': '᱙',
+      '0': '᱐', '1': '᱑', '2': '᱒', '3': '᱓', '4': '᱔',
+      '5': '᱕', '6': '᱖', '7': '᱗', '8': '᱘', '9': '᱙'
+    };
 
-    const COMMON_HINDI_WORDS = new Set([
-      'है', 'हैं', 'हूँ', 'हो', 'था', 'थे', 'की', 'के', 'का', 'को', 'से', 'में', 'पर',
-      'और', 'भी', 'तो', 'अब', 'आज', 'हम', 'आप', 'तुम', 'सभी', 'सब', 'यह', 'वह',
-      'एक', 'दिया', 'करो', 'करें', 'करना', 'जरा', 'कृपया'
-    ]);
+    function transliterateToOlChiki(word) {
+      let res = '';
+      for (const ch of word) res += DEVA_TO_OLCK[ch] || ch;
+      return res;
+    }
 
-    const CLASSROOM_TEMPLATES = [
-      { pattern: /^(?:बच्चों\s*)?आज\s+हम\s+(.+?)\s+(सीखेंगे|सीखते हैं)$/i, tailSat: 'ᱵᱚ ᱪᱮᱫ-ᱟ ᱾', tailPho: 'bo ched-a.', prefixSat: 'ᱛᱮᱦᱮᱧ ᱫᱚ ᱟᱵᱚ', prefixPho: 'Teheñ do abo' },
-      { pattern: /^(?:बच्चों\s*)?आज\s+हम\s+(.+?)\s+(पढ़ेंगे|पढ़ते हैं)$/i, tailSat: 'ᱵᱚ ᱯᱟᱲᱦᱟᱣ-ᱟ ᱾', tailPho: 'bo parhaw-a.', prefixSat: 'ᱛᱮᱦᱮᱧ ᱫᱚ ᱟᱵᱚ', prefixPho: 'Teheñ do abo' },
-      { pattern: /^(.+?)\s+गिन(?:कर|ो|िए)?\s*(?:बताइए|बोलो|बोलिए)?$/i, tailSat: 'ᱞᱮᱠᱷᱟ ᱠᱟᱛᱮ ᱞᱟᱹᱭ ᱯᱮ ᱾', tailPho: 'lekha kate lay pe.', prefixSat: '', prefixPho: '' },
-      { pattern: /^(.+?)\s+उठा(?:कर|ओ|इए)?\s*(?:दिखाइए|दिखाओ)?$/i, tailSat: 'ᱨᱟᱠᱟᱵ ᱠᱟᱛᱮ ᱩᱫᱩᱜ ᱯᱮ ᱾', tailPho: 'rakab kate udug pe.', prefixSat: '', prefixPho: '' },
-      { pattern: /^(?:सभी\s+बच्चे\s+)?(.+?)\s+खोल(?:िए|ो)?$/i, tailSat: 'ᱡᱷᱤᱡ ᱯᱮ ᱾', tailPho: 'jhij pe.', prefixSat: 'ᱡᱚᱛᱚ ᱜᱤᱫᱽᱨᱟᱹ', prefixPho: 'Joto gidra' }
-    ];
-
-    function translateConceptPhrase(text) {
-      const words = normalizeHindiText(text).split(/\s+/).filter(Boolean);
-      const satWords = [];
-      const phoWords = [];
-      const devaWords = [];
-      let hits = 0;
-      let foundAudio = null;
-
-      words.forEach(w => {
-        const match = lookupLexiconWord(w);
-        if (match) {
-          hits++;
-          satWords.push(match.sat);
-          phoWords.push(match.pho);
-          devaWords.push(match.deva);
-          if (!foundAudio && match.audio) foundAudio = match.audio;
-        } else if (!COMMON_HINDI_WORDS.has(w)) {
-          satWords.push(transliterateToOlChiki(w));
-          phoWords.push(w);
-          devaWords.push(w);
-        }
-      });
-
-      return {
-        sat: satWords.join(' ').trim(),
-        pho: phoWords.join(' ').trim(),
-        deva: devaWords.join(' ').trim(),
-        hits,
-        audio: foundAudio
-      };
+    function normalizeHindiText(text) {
+      return String(text || '')
+        .replace(/[“”‘’"']/g, '')
+        .replace(/[.,!?।॥;:]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
     }
 
     function lookupLexiconWord(word) {
@@ -1276,89 +1323,124 @@
       return null;
     }
 
+    function translateConceptPhrase(text) {
+      const words = normalizeHindiText(text).split(/\s+/).filter(Boolean);
+      const satWords = [];
+      const phoWords = [];
+      const devaWords = [];
+      let hits = 0;
+
+      words.forEach(w => {
+        const match = lookupLexiconWord(w);
+        if (match) {
+          hits++;
+          satWords.push(match.sat);
+          phoWords.push(match.pho);
+          devaWords.push(match.deva);
+        } else {
+          satWords.push(transliterateToOlChiki(w));
+          phoWords.push(w);
+          devaWords.push(w);
+        }
+      });
+
+      return {
+        sat: satWords.join(' ').trim(),
+        pho: phoWords.join(' ').trim(),
+        deva: devaWords.join(' ').trim(),
+        hits
+      };
+    }
+
+    const CLASSROOM_TEMPLATES = [
+      { pattern: /^(?:बच्चों\s*)?आज\s+हम\s+(.+?)\s+(?:सीखेंगे|सीखते हैं)$/i, tailSat: 'ᱵᱚ ᱪᱮᱫ-ᱟ ᱾', tailPho: 'bo ched-a.', tailDeva: 'बो चेद-आ', prefixSat: 'ᱛᱮᱦᱮᱧ ᱫᱚ ᱟᱵᱚ', prefixPho: 'Teheñ do abo', prefixDeva: 'तेहेंज दो आबो' },
+      { pattern: /^(?:बच्चों\s*)?आज\s+हम\s+(.+?)\s+(?:पढ़ेंगे|पढ़ते हैं)$/i, tailSat: 'ᱵᱚ ᱯᱟᱲᱦᱟᱣ-ᱟ ᱾', tailPho: 'bo parhaw-a.', tailDeva: 'बो पाड़हाव-आ', prefixSat: 'ᱛᱮᱦᱮᱧ ᱫᱚ ᱟᱵᱚ', prefixPho: 'Teheñ do abo', prefixDeva: 'तेहेंज दो आबो' },
+      { pattern: /^(.+?)\s+गिन(?:कर|ो|िए)?\s*(?:बताइए|बोलो|बोलिए)?$/i, tailSat: 'ᱞᱮᱠᱷᱟ ᱠᱟᱛᱮ ᱞᱟᱹᱭ ᱯᱮ ᱾', tailPho: 'lekha kate lay pe.', tailDeva: 'लेखा काते लय पे', prefixSat: '', prefixPho: '', prefixDeva: '' },
+      { pattern: /^(.+?)\s+उठा(?:कर|ओ|इए)?\s*(?:दिखाइए|दिखाओ)?$/i, tailSat: 'ᱨᱟᱠᱟᱵ ᱠᱟᱛᱮ ᱩᱫᱩᱜ ᱯᱮ ᱾', tailPho: 'rakab kate udug pe.', tailDeva: 'राकाब काते उदुग पे', prefixSat: '', prefixPho: '', prefixDeva: '' },
+      { pattern: /^(?:सभी\s+बच्चे\s+)?(.+?)\s+खोल(?:िए|ो)$/i, tailSat: 'ᱡᱷᱤᱡ ᱯᱮ ᱾', tailPho: 'jhij pe.', tailDeva: 'झिज पे', prefixSat: 'ᱡᱚᱛᱚ ᱜᱤᱫᱽᱨᱟᱹ', prefixPho: 'Joto gidra', prefixDeva: 'जोतो गिदरा' }
+    ];
+
+    const PEDAGOGICAL_PATTERNS = [
+      { pattern: /^(?:आप\s+)?(?:लोग\s+)?कैसे\s+हैं\??$/i, sat: 'ᱟᱯᱮ ᱪᱮᱫ ᱞᱮᱠᱟ ᱢᱮᱱᱟᱜ ᱯᱮᱭᱟ?', pho: 'Ape ched leka menag peya?', deva: 'आपे चेद लेका मेनाग पेया', audio: null },
+      { pattern: /^(?:यहाँ|इधर)\s+(?:आइए|आओ)।?$/i, sat: 'ᱱᱚᱸᱰᱮ ᱦᱤᱡᱩᱜ ᱯᱮ ᱾', pho: 'Nonde hijug pe.', deva: 'नोंडे हिजुग पे', audio: null },
+      { pattern: /^(?:ताली\s+)?(?:बजाइए|बजाओ)।?$/i, sat: 'ᱛᱷᱟᱭᱚ ᱯᱮ ᱾', pho: 'Thayo pe.', deva: 'थायो पे', audio: 'thayo_pe.mp3' },
+      { pattern: /^(?:खड़े\s+हो\s*(?:जाइए|जाओ))।?$/i, sat: 'ᱛᱤᱸᱜᱩᱱ ᱯᱮ ᱾', pho: 'Tingun pe.', deva: 'तिंगुन पे', audio: 'tingun_pe.mp3' },
+      { pattern: /^(?:बैठ\s*(?:जाइए|जाओ))।?$/i, sat: 'ᱫᱩᱲᱩᱵ ᱯᱮ ᱾', pho: 'Durub pe.', deva: 'दुरुब पे', audio: 'durub_pe.mp3' },
+      { pattern: /^(?:शांत\s*(?:रहिए|रहो)|चुप\s*(?:रहिए|रहो))।?$/i, sat: 'ᱛᱷᱤᱨ ᱛᱟᱦᱮᱸᱱ ᱯᱮ ᱾', pho: 'Thir tahen pe.', deva: 'थिर ताहेन पे', audio: 'cmd_thir_tahen_pe.mp3' },
+      { pattern: /^(?:नमस्ते\s*बच्चों?|सुप्रभात\s*बच्चों?)।?!?$/i, sat: 'ᱡᱚᱦᱟᱨ ᱜᱤᱫᱽᱨᱟᱹ ᱠᱚ!', pho: 'Johar gidra ko!', deva: 'जोहार गिदरा को', audio: 'johar_gidra_ko.mp3' },
+      { pattern: /^(?:नमस्ते|सुप्रभात|नमस्कार|प्रणाम|जोहार)।?!?$/i, sat: 'ᱡᱚᱦᱟᱨ ᱾', pho: 'Johar.', deva: 'जोहार', audio: null },
+      { pattern: /^(?:तुम्हारा|आपका)\s+(?:क्या\s+)?नाम\s+है\??$/i, sat: 'ᱟᱢᱟᱜ ᱧᱩᱛᱩᱢ ᱫᱚ ᱪᱮᱫ?', pho: 'Amag ñutum do ched?', deva: 'आमाग न्युतुम दो चेद', audio: 'cmd_amag_nutum_ched.mp3' },
+      { pattern: /^(?:तुम|आप)\s+कहाँ\s+रहते\s+हो\??$/i, sat: 'ᱟᱢ ᱫᱚ ᱚᱠᱟᱨᱮᱢ ᱛᱟᱦᱮᱸᱱᱟ?', pho: 'Am do okarem tahena?', deva: 'आम दो ओकारेम ताहेना', audio: 'cmd_okarem_tahena.mp3' },
+      { pattern: /^(?:किसे|किसको)\s+समझ\s+आया\??$/i, sat: 'ᱚᱠᱚᱭ ᱮ ᱵᱩᱡᱷᱟᱹᱣ ᱠᱮᱫ-ᱟ?', pho: 'Okoy e bujhaw ked-a?', deva: 'ओकोय ए बुझाव केद-आ', audio: 'cmd_okoy_bujhaw_keda.mp3' },
+      { pattern: /^(?:क्या\s+)?कोई\s+सवाल\s+है\??$/i, sat: 'ᱪᱮᱫ ᱠᱩᱠᱞᱤ ᱢᱮᱱᱟᱜ-ᱟ?', pho: 'Ched kukli menag-a?', deva: 'चेद कुकली मेनाग-आ', audio: 'cmd_ched_kukli.mp3' }
+    ];
+
     function translateClassroomSentence(hindiText) {
       const cleaned = normalizeHindiText(hindiText);
       const lower = cleaned.toLowerCase();
 
       if (!cleaned) {
-        return { sat: '', pho: '', deva: '', audio: 'default_santali.mp3', source: 'empty', confidence: 0 };
+        return { sat: '', pho: '', deva: '', audio: null, source: 'empty', confidence: 0 };
       }
 
-      // 1. Direct Phrasebook Template Match
-      for (const p of CLASSROOM_PHRASES) {
-        const pClean = normalizeHindiText(p.hi).toLowerCase();
-        if (lower === pClean || lower.includes(pClean) || pClean.includes(lower)) {
-          return { sat: p.sat, pho: p.pho, deva: p.deva, audio: p.audio, source: 'phrasebook', confidence: 0.98 };
+      // 1. Direct Pattern matching for core pedagogical classroom phrases
+      for (const pp of PEDAGOGICAL_PATTERNS) {
+        if (pp.pattern.test(cleaned)) {
+          return { sat: pp.sat, pho: pp.pho, deva: pp.deva, audio: pp.audio || null, source: 'pedagogical_pattern', confidence: 0.98 };
         }
       }
 
-      // 2. Teaching sentence templates keep free-form lessons natural.
+      // 2. Exact match against FLASHCARDS
+      for (const fc of FLASHCARDS) {
+        const fcClean = normalizeHindiText(fc.hi);
+        if (cleaned === fcClean || lower === fcClean.toLowerCase()) {
+          return { sat: fc.sat + ' ᱾', pho: fc.pho + '.', deva: fc.deva, audio: fc.audio || null, source: 'flashcard_exact', confidence: 1.0 };
+        }
+      }
+
+      // 3. Exact match against curated CLASSROOM_PHRASES
+      for (const p of CLASSROOM_PHRASES) {
+        const pClean = normalizeHindiText(p.hi);
+        if (cleaned === pClean || lower === pClean.toLowerCase()) {
+          return { sat: p.sat, pho: p.pho, deva: p.deva, audio: p.audio || null, source: 'phrasebook_exact', confidence: 0.95 };
+        }
+      }
+
+      // 4. Classroom teaching sentence templates (e.g. आज हम [गणित] सीखेंगे)
       for (const tpl of CLASSROOM_TEMPLATES) {
         const match = cleaned.match(tpl.pattern);
         if (match) {
           const concept = translateConceptPhrase(match[1]);
           const sat = [tpl.prefixSat, concept.sat, tpl.tailSat].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
           const pho = [tpl.prefixPho, concept.pho, tpl.tailPho].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+          const deva = [tpl.prefixDeva, concept.deva, tpl.tailDeva].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
           return {
             sat,
             pho,
-            deva: concept.deva,
-            audio: concept.audio || 'default_santali.mp3',
+            deva,
+            audio: null,
             source: 'template',
-            confidence: concept.hits > 0 ? 0.86 : 0.68
+            confidence: concept.hits > 0 ? 0.88 : 0.72
           };
         }
       }
 
-      // 3. Instant Keyword Audio Resolver (Guaranteed Authentic Santali Voice)
-      for (const item of KEYWORD_AUDIO_MAP) {
-        for (const k of item.keys) {
-          if (lower.includes(k.toLowerCase())) {
-            return { sat: item.sat, pho: item.pho, deva: item.deva, audio: item.audio, source: 'keyword', confidence: 0.9 };
-          }
-        }
-      }
-
-      // 4. Direct Lexicon Exact Match
+      // 5. Direct Vocabulary exact match
       if (LEXICON[cleaned]) {
         const w = LEXICON[cleaned];
-        return { sat: w.sat + ' ᱾', pho: w.pho + '.', deva: w.deva, audio: w.audio, source: 'lexicon', confidence: 0.92 };
+        return { sat: w.sat + ' ᱾', pho: w.pho + '.', deva: w.deva, audio: null, source: 'lexicon_exact', confidence: 0.94 };
       }
 
-      // 5. Word-by-word classroom fallback with review signal.
+      // 6. Context-aware word-by-word synthesis with 100% Ol Chiki rendering
       const concept = translateConceptPhrase(cleaned);
-
       return {
         sat: (concept.sat || transliterateToOlChiki(cleaned)) + ' ᱾',
         pho: (concept.pho || cleaned) + '.',
         deva: concept.deva || cleaned,
-        audio: concept.audio || 'default_santali.mp3',
-        source: concept.hits > 0 ? 'mixed' : 'transliteration',
-        confidence: concept.hits > 0 ? 0.66 : 0.45
+        audio: null,
+        source: concept.hits > 0 ? 'context_synthesis' : 'transliteration',
+        confidence: concept.hits > 0 ? 0.80 : 0.55
       };
-    }
-
-    // Transliterate Devanagari to 100% Valid Ol Chiki Characters
-    function transliterateToOlChiki(word) {
-      const table = {
-        'अ': 'ᱚ', 'आ': 'ᱟ', 'इ': 'ᱤ', 'ई': 'ᱤ', 'उ': 'ᱩ', 'ऊ': 'ᱩ',
-        'ए': 'ᱮ', 'ऐ': 'ᱮ', 'ओ': 'ᱳ', 'औ': 'ᱳ',
-        'क': 'ᱠ', 'ख': 'ᱠᱷ', 'ग': 'ᱜ', 'घ': 'ᱜᱷ', 'ङ': 'ᱝ',
-        'च': 'ᱪ', 'छ': 'ᱪᱷ', 'ज': 'ᱡ', 'झ': 'ᱡᱷ', 'ञ': 'ᱧ',
-        'ट': 'ᱴ', 'ठ': 'ᱴᱷ', 'ड': 'ᱰ', 'ढ': 'ᱰᱷ', 'ण': 'ᱬ',
-        'त': 'ᱛ', 'थ': 'ᱛᱷ', 'द': 'ᱫ', 'ध': 'ᱫᱷ', 'न': 'ᱱ',
-        'प': 'ᱯ', 'फ': 'ᱯᱷ', 'ब': 'ᱵ', 'भ': 'ᱵᱷ', 'म': 'ᱢ',
-        'य': 'ᱭ', 'र': 'ᱨ', 'ल': 'ᱞ', 'व': 'ᱣ', 'श': 'ᱥ',
-        'ष': 'ᱥ', 'स': 'ᱥ', 'ह': 'ᱦ',
-        'ा': 'ᱟ', 'ि': 'ᱤ', 'ी': 'ᱤ', 'ु': 'ᱩ', 'ू': 'ᱩ',
-        'े': 'ᱮ', 'ै': 'ᱮ', 'ो': 'ᱳ', 'ौ': 'ᱳ',
-        'ं': 'ᱝ', 'ँ': 'ᱸ', 'ः': 'ᱷ', '्': '',
-        '०': '᱐', '१': '᱑', '२': '᱒', '३': '᱓', '४': '᱔',
-        '५': '᱕', '६': '᱖', '७': '᱗', '८': '᱘', '९': '᱙'
-      };
-      let res = '';
-      for (const ch of word) res += table[ch] || ch;
-      return res;
     }
 
     function clearLiveDialogue() {
@@ -1380,10 +1462,10 @@
         CLASSROOM_PHRASES[34]  // शाबाश / बहुत बढ़िया
       ];
       grid.innerHTML = sampleCmds.map(cmd => `
-        <button class="sound-btn" onclick='triggerSoundboardCmd(${callArgs(cmd.hi, cmd.sat, cmd.pho, cmd.deva, cmd.audio || '')})'>
-          <div class="sound-btn-hi">${escapeHtml(cmd.hi)}</div>
-          <div class="sound-btn-sat">${escapeHtml(cmd.sat)}</div>
-          <div class="sound-btn-pho">${escapeHtml(cmd.pho)}</div>
+        <button class="sound-btn" onclick="triggerSoundboardCmd('${cmd.hi}', '${cmd.sat}', '${cmd.pho}', '${cmd.deva}', '${cmd.audio || ''}')">
+          <div class="sound-btn-hi">${cmd.hi}</div>
+          <div class="sound-btn-sat">${cmd.sat}</div>
+          <div class="sound-btn-pho">${cmd.pho}</div>
         </button>
       `).join('');
     }
@@ -1396,14 +1478,14 @@
       item.className = 'dialogue-card';
       item.innerHTML = `
         <div class="dialogue-meta">
-          <span>⚡ ${escapeHtml(timeStr)} · 1-Tap Quick Command</span>
+          <span>⚡ ${timeStr} · 1-Tap Quick Command</span>
           <span style="color: var(--accent); font-weight: 700;">Instant Audio</span>
         </div>
-        <div class="dialogue-hindi">"${escapeHtml(hi)}"</div>
-        <div class="dialogue-santali">${escapeHtml(sat)}</div>
-        <div class="dialogue-phonetic">${escapeHtml(pho)}</div>
+        <div class="dialogue-hindi">"${hi}"</div>
+        <div class="dialogue-santali">${sat}</div>
+        <div class="dialogue-phonetic">${pho}</div>
         <div class="dialogue-actions">
-          <button class="btn-act btn-act-primary" onclick='playVernacularAudio(${callArgs(audio, deva, pho)})'>🔊 Replay Audio</button>
+          <button class="btn-act btn-act-primary" onclick="playVernacularAudio('${audio}', '${deva.replace(/'/g, "\\'")}', '${pho.replace(/'/g, "\\'")}')">🔊 Replay Audio</button>
         </div>
       `;
       feed.insertBefore(item, feed.firstChild);
@@ -1462,13 +1544,13 @@
       container.innerHTML = filtered.map(p => `
         <div class="phrase-card">
           <div class="phrase-info">
-            <div class="phrase-hi">${escapeHtml(p.hi)}</div>
-            <div class="phrase-sat">${escapeHtml(p.sat)}</div>
-            <div class="phrase-pho">${escapeHtml(p.pho)}</div>
+            <div class="phrase-hi">${p.hi}</div>
+            <div class="phrase-sat">${p.sat}</div>
+            <div class="phrase-pho">${p.pho}</div>
           </div>
           <div style="display: flex; gap: 6px;">
-            <button class="btn-act btn-act-primary" onclick='playVernacularAudio(${callArgs(p.audio || '', p.deva, p.pho)})'>🔊 Play</button>
-            <button class="btn-act btn-act-outline" onclick='speakHindiAudio(${callArgs(p.hi)})'>🗣️</button>
+            <button class="btn-act btn-act-primary" onclick="playVernacularAudio('${p.audio || ''}', '${p.deva.replace(/'/g, "\\'")}', '${p.pho.replace(/'/g, "\\'")}')">🔊 Play</button>
+            <button class="btn-act btn-act-outline" onclick="speakHindiAudio('${p.hi.replace(/'/g, "\\'")}')">🗣️</button>
           </div>
         </div>
       `).join('');
@@ -1552,9 +1634,9 @@
 
       const grid = document.getElementById('quiz-options-grid');
       grid.innerHTML = options.map(opt => `
-        <button class="quiz-option-btn" onclick='checkQuizAnswer(${callArgs(opt.hi)}, this)'>
-          <div class="quiz-opt-emoji">${escapeHtml(opt.emoji)}</div>
-          <div class="quiz-opt-label">${escapeHtml(opt.hi)}</div>
+        <button class="quiz-option-btn" onclick="checkQuizAnswer('${opt.hi}', this)">
+          <div class="quiz-opt-emoji">${opt.emoji}</div>
+          <div class="quiz-opt-label">${opt.hi}</div>
         </button>
       `).join('');
 
@@ -1662,9 +1744,9 @@
       renderActiveFlashcard();
       renderLessons();
 
-      // Initial dialogue item
-      const initialItem = CLASSROOM_PHRASES[10]; // "नमस्ते बच्चों!"
-      processClassroomUtterance(initialItem.hi);
+      // Initial dialogue item (render card without auto-speaking)
+      const initialItem = CLASSROOM_PHRASES[8] || CLASSROOM_PHRASES[0];
+      processClassroomUtterance(initialItem.hi, false);
     });
   </script>
 </body>

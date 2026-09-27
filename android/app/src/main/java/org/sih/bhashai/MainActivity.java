@@ -12,6 +12,7 @@ import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.webkit.PermissionRequest;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean isListening = false;
     private boolean isContinuousMode = false;
+    private volatile boolean isAudioPlaying = false;
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
 
     @Override
@@ -104,6 +106,24 @@ public class MainActivity extends AppCompatActivity {
                     if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                         textToSpeech.setLanguage(Locale.getDefault());
                     }
+                    textToSpeech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+                        @Override
+                        public void onStart(String utteranceId) {
+                            isAudioPlaying = true;
+                        }
+
+                        @Override
+                        public void onDone(String utteranceId) {
+                            isAudioPlaying = false;
+                            onPlaybackFinished();
+                        }
+
+                        @Override
+                        public void onError(String utteranceId) {
+                            isAudioPlaying = false;
+                            onPlaybackFinished();
+                        }
+                    });
                 }
             }
         });
@@ -117,15 +137,33 @@ public class MainActivity extends AppCompatActivity {
         this.speechPitch = Math.max(0.5f, Math.min(2.0f, pitch));
     }
 
+    public void setAudioPlaying(boolean playing) {
+        this.isAudioPlaying = playing;
+    }
+
+    public void onPlaybackFinished() {
+        if (isContinuousMode) {
+            mainHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if (isContinuousMode && !isListening && !isAudioPlaying) {
+                        startNativeSpeechRecognition(true);
+                    }
+                }
+            }, 300);
+        }
+    }
+
     public void speakHindi(final String text) {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 if (textToSpeech != null && ttsReady) {
-                    textToSpeech.stop();
+                    stopAllAudio();
                     textToSpeech.setLanguage(new Locale("hi", "IN"));
                     textToSpeech.setPitch(speechPitch);
                     textToSpeech.setSpeechRate(speechRate);
+                    isAudioPlaying = true;
                     textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "hindi_tts");
                 } else {
                     Toast.makeText(MainActivity.this, "Hindi TTS initializing...", Toast.LENGTH_SHORT).show();
@@ -138,12 +176,30 @@ public class MainActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                String targetFile = audioFileName;
-                if (targetFile == null || targetFile.trim().isEmpty() ||
-                    targetFile.equals("null") || targetFile.equals("undefined")) {
-                    targetFile = "default_santali.mp3";
+                // If a specific, valid asset file is specified (e.g. flashcard or soundboard), play it if exists
+                if (audioFileName != null && !audioFileName.trim().isEmpty() &&
+                    !audioFileName.equals("null") && !audioFileName.equals("undefined") &&
+                    !audioFileName.equals("default_santali.mp3")) {
+                    boolean played = bridge.playAssetAudioIfExists("audio/" + audioFileName.trim());
+                    if (played) {
+                        return;
+                    }
                 }
-                bridge.playAssetAudio("audio/" + targetFile);
+
+                // Dynamic speech synthesis using Android TextToSpeech with tribal Devanagari phonetics
+                if (devaPhonetic != null && !devaPhonetic.trim().isEmpty()) {
+                    if (bridge != null) {
+                        bridge.stopMediaPlayer();
+                    }
+                    if (textToSpeech != null && ttsReady) {
+                        textToSpeech.stop();
+                        textToSpeech.setLanguage(new Locale("hi", "IN"));
+                        textToSpeech.setPitch(speechPitch);
+                        textToSpeech.setSpeechRate(speechRate);
+                        isAudioPlaying = true;
+                        textToSpeech.speak(devaPhonetic.trim(), TextToSpeech.QUEUE_FLUSH, null, "santali_tts");
+                    }
+                }
             }
         });
     }
@@ -153,7 +209,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (textToSpeech != null) {
-                    textToSpeech.stop();
+                    try { textToSpeech.stop(); } catch (Exception ignored) {}
+                }
+            }
+        });
+    }
+
+    public void stopAllAudio() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                isAudioPlaying = false;
+                if (textToSpeech != null) {
+                    try { textToSpeech.stop(); } catch (Exception ignored) {}
+                }
+                if (bridge != null) {
+                    bridge.stopMediaPlayer();
                 }
             }
         });
@@ -206,6 +277,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         isContinuousMode = continuous;
+
+        // Stop any audio before recording starts
+        stopAllAudio();
 
         if (speechRecognizer != null) {
             try {
@@ -261,11 +335,11 @@ public class MainActivity extends AppCompatActivity {
                         mainHandler.postDelayed(new Runnable() {
                             @Override
                             public void run() {
-                                if (isContinuousMode) {
+                                if (isContinuousMode && !isListening && !isAudioPlaying) {
                                     startNativeSpeechRecognition(true);
                                 }
                             }
-                        }, 250);
+                        }, 300);
                         return;
                     }
                 }
@@ -282,6 +356,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResults(Bundle results) {
                 isListening = false;
+                if (isAudioPlaying) {
+                    // Ignore acoustic echo from speaker
+                    return;
+                }
                 ArrayList<String> matches = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 if (matches != null && !matches.isEmpty()) {
                     final String text = matches.get(0);
@@ -301,16 +379,19 @@ public class MainActivity extends AppCompatActivity {
                     mainHandler.postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            if (isContinuousMode) {
+                            if (isContinuousMode && !isListening && !isAudioPlaying) {
                                 startNativeSpeechRecognition(true);
                             }
                         }
-                    }, 200);
+                    }, 800);
                 }
             }
 
             @Override
             public void onPartialResults(Bundle partialResults) {
+                if (isAudioPlaying) {
+                    return;
+                }
                 ArrayList<String> matches = partialResults.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 if (matches != null && !matches.isEmpty()) {
                     final String partial = matches.get(0);
@@ -343,6 +424,7 @@ public class MainActivity extends AppCompatActivity {
             } catch (Exception ignored) {}
             isListening = false;
         }
+        stopAllAudio();
     }
 
     private String getErrorMessage(int errorCode) {

@@ -56,13 +56,13 @@ public class BhashAIBridge {
     }
 
     @JavascriptInterface
+    public void stopAudio() {
+        activity.stopAllAudio();
+    }
+
+    @JavascriptInterface
     public void playSantaliAudio(final String filename) {
-        activity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                playAssetAudio("audio/" + filename);
-            }
-        });
+        playAssetAudio("audio/" + filename);
     }
 
     @JavascriptInterface
@@ -100,49 +100,78 @@ public class BhashAIBridge {
         });
     }
 
-    public void playAssetAudio(final String assetPath) {
+    public boolean playAssetAudioIfExists(final String assetPath) {
+        AssetFileDescriptor afd = null;
+        try {
+            afd = activity.getAssets().openFd(assetPath);
+        } catch (IOException e) {
+            return false;
+        }
+
+        final AssetFileDescriptor finalAfd = afd;
         activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                AssetFileDescriptor afd = null;
                 try {
-                    if (mediaPlayer != null) {
-                        try {
-                            mediaPlayer.stop();
-                            mediaPlayer.reset();
-                            mediaPlayer.release();
-                        } catch (Exception ignored) {}
-                        mediaPlayer = null;
-                    }
+                    stopMediaPlayer();
+                    activity.stopTTS();
+                    activity.setAudioPlaying(true);
 
                     mediaPlayer = new MediaPlayer();
-                    try {
-                        afd = activity.getAssets().openFd(assetPath);
-                    } catch (IOException e) {
-                        // Fallback to default santali audio if specific asset not found
-                        afd = activity.getAssets().openFd("audio/default_santali.mp3");
-                    }
-
-                    mediaPlayer.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
+                    mediaPlayer.setDataSource(finalAfd.getFileDescriptor(), finalAfd.getStartOffset(), finalAfd.getLength());
                     mediaPlayer.prepare();
                     mediaPlayer.start();
-                    afd.close();
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            stopMediaPlayer();
+                            activity.setAudioPlaying(false);
+                            activity.onPlaybackFinished();
+                        }
+                    });
+                    mediaPlayer.setOnErrorListener(new MediaPlayer.OnErrorListener() {
+                        @Override
+                        public boolean onError(MediaPlayer mp, int what, int extra) {
+                            stopMediaPlayer();
+                            activity.setAudioPlaying(false);
+                            activity.onPlaybackFinished();
+                            return true;
+                        }
+                    });
+                    finalAfd.close();
                 } catch (Exception e) {
                     e.printStackTrace();
-                    if (afd != null) {
-                        try { afd.close(); } catch (Exception ignored) {}
-                    }
+                    stopMediaPlayer();
+                    activity.setAudioPlaying(false);
+                    try { finalAfd.close(); } catch (Exception ignored) {}
                 }
             }
         });
+        return true;
     }
 
-    public void release() {
+    public void playAssetAudio(final String assetPath) {
+        boolean played = playAssetAudioIfExists(assetPath);
+        if (!played) {
+            stopMediaPlayer();
+            activity.setAudioPlaying(false);
+        }
+    }
+
+    public void stopMediaPlayer() {
         if (mediaPlayer != null) {
             try {
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                }
+                mediaPlayer.reset();
                 mediaPlayer.release();
             } catch (Exception ignored) {}
             mediaPlayer = null;
         }
+    }
+
+    public void release() {
+        stopMediaPlayer();
     }
 }

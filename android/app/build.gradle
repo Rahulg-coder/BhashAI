@@ -5,6 +5,7 @@ plugins {
 android {
     namespace 'org.sih.bhashai'
     compileSdk 34
+    buildToolsVersion "35.0.0"
 
     defaultConfig {
         applicationId "org.sih.bhashai"
